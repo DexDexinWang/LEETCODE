@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="src" path="1. Two Sum"/>
+	<classpathentry kind="src" path="496. Next Greater Element I"/>
+	<classpathentry kind="src" path="463. Island Perimeter"/>
+	<classpathentry kind="src" path="485. Max Consecutive Ones"/>
+	<classpathentry kind="src" path="136. Single Number"/>
+	<classpathentry kind="src" path="292. Nim Game"/>
+	<classpathentry kind="src" path="448. Find All Numbers Disappeared in an Array"/>
+	<classpathentry kind="src" path="283. Move Zeroes"/>
+	<classpathentry kind="src" path="492. Construct the Rectangle"/>
+	<classpathentry kind="src" path="506. Relative Ranks"/>
+	<classpathentry kind="src" path="167. Two Sum II - Input array is sorted"/>
+	<classpathentry kind="src" path="455. Assign Cookies"/>
+	<classpathentry kind="src" path="453. Minimum Moves to Equal Array Elements"/>
+	<classpathentry kind="src" path="349. Intersection of Two Arrays"/>
+	<classpathentry kind="src" path="122. Best Time to Buy and Sell Stock II"/>
+	<classpathentry kind="src" path="169. Majority Element"/>
+	<classpathentry kind="src" path="217. Contains Duplicate"/>
+	<classpathentry kind="src" path="401. Binary Watch"/>
+	<classpathentry kind="src" path="350. Intersection of Two Arrays II"/>
+	<classpathentry kind="src" path="447. Number of Boomerangs"/>
+	<classpathentry kind="src" path="121. Best Time to Buy and Sell Stock"/>
+	<classpathentry kind="src" path="202. Happy Number"/>
+	<classpathentry kind="src" path="326. Power of Three"/>
+	<classpathentry kind="src" path="231. Power of Two"/>
+	<classpathentry kind="src" path="35. Search Insert Position"/>
+	<classpathentry kind="src" path="70. Climbing Stairs"/>
+	<classpathentry kind="src" path="268. Missing Number"/>
+	<classpathentry kind="src" path="263. Ugly Number"/>
+	<classpathentry kind="src" path="53. Maximum Subarray"/>
+	<classpathentry kind="src" path="9. Palindrome Number"/>
+	<classpathentry kind="src" path="38. Count and Say"/>
+	<classpathentry kind="src" path="561. Array Partition I"/>
+	<classpathentry kind="src" path="198. House Robber"/>
+	<classpathentry kind="src" path="27. Remove Element"/>
+	<classpathentry kind="src" path="118. Pascal&apos;s Triangle"/>
+	<classpathentry kind="src" path="66. Plus One"/>
+	<classpathentry kind="src" path="367. Valid Perfect Square"/>
+	<classpathentry kind="src" path="119. Pascal&apos;s Triangle II"/>
+	<classpathentry kind="src" path="172. Factorial Trailing Zeroes"/>
+	<classpathentry kind="src" path="374. Guess Number Higher or Lower"/>
+	<classpathentry kind="src" path="189. Rotate Array"/>
+	<classpathentry kind="src" path="26. Remove Duplicates from Sorted Array"/>
+	<classpathentry kind="src" path="507. Perfect Number"/>
+	<classpathentry kind="src" path="88. Merge Sorted Array"/>
+	<classpathentry kind="src" path="69. Sqrt(x)"/>
+	<classpathentry kind="src" path="204. Count Primes"/>
+	<classpathentry kind="src" path="7. Reverse Integer"/>
+	<classpathentry kind="src" path="400. Nth Digit"/>
+	<classpathentry kind="src" path="441. Arranging Coins"/>
+	<classpathentry kind="src" path="566. Reshape the Matrix"/>
+	<classpathentry kind="src" path="575. Distribute Candies"/>
+	<classpathentry kind="src" path="581. Shortest Unsorted Continuous Subarray"/>
+	<classpathentry kind="src" path="560. Subarray Sum Equals K"/>
+	<classpathentry kind="src" path="442. Find All Duplicates in an Array"/>
+	<classpathentry kind="src" path="599. Minimum Index Sum of Two Lists"/>
+	<classpathentry kind="src" path="594. Longest Harmonious Subsequence"/>
+	<classpathentry kind="src" path="554. Brick Wall"/>
+	<classpathentry kind="src" path="219. Contains Duplicate II"/>
+	<classpathentry kind="src" path="220. Contains Duplicate III"/>
+	<classpathentry kind="src" path="532. K-diff Pairs in an Array"/>
+	<classpathentry kind="src" path="414. Third Maximum Number"/>
+	<classpathentry kind="src" path="90. Subsets II"/>
+	<classpathentry kind="src" path="152. Maximum Product Subarray"/>
+	<classpathentry kind="src" path="278. First Bad Version"/>
+	<classpathentry kind="src" path="598. Range Addition II"/>
+	<classpathentry kind="src" path="605. Can Place Flowers"/>
+	<classpathentry kind="src" path="529. Minesweeper"/>
+	<classpathentry kind="src" path="475. Heaters"/>
+	<classpathentry kind="src" path="419. Battleships in a Board"/>
+	<classpathentry kind="src" path="495. Teemo Attacking"/>
+	<classpathentry kind="src" path="406. Queue Reconstruction by Height"/>
+	<classpathentry kind="src" path="413. Arithmetic Slices"/>
+	<classpathentry kind="src" path="628. Maximum Product of Three Numbers"/>
+	<classpathentry kind="src" path="624. Maximum Distance in Arrays"/>
+	<classpathentry kind="src" path="339. Nested List Weight Sum"/>
+	<classpathentry kind="src" path="633. Sum of Square Numbers"/>
+	<classpathentry kind="src" path="661. Image Smoother"/>
+	<classpathentry kind="src" path="252. Meeting Rooms"/>
+	<classpathentry kind="src" path="643. Maximum Average Subarray I"/>
+	<classpathentry kind="src" path="645. Set Mismatch"/>
+	<classpathentry kind="src" path="660. Remove 9"/>
+	<classpathentry kind="src" path="422. Valid Word Square"/>
+	<classpathentry kind="src" path="256. Paint House"/>
+	<classpathentry kind="src" path="276. Paint Fence"/>
+	<classpathentry kind="src" path="651. 4 Keys Keyboard"/>
+	<classpathentry kind="src" path="357. Count Numbers with Unique Digits"/>
+	<classpathentry kind="src" path="300. Longest Increasing Subsequence"/>
+	<classpathentry kind="src" path="120. Triangle"/>
+	<classpathentry kind="src" path="576. Out of Boundary Paths"/>
+	<classpathentry kind="src" path="139. Word Break"/>
+	<classpathentry kind="src" path="544. Output Contest Matches"/>
+	<classpathentry kind="src" path="531. Lonely Pixel I"/>
+	<classpathentry kind="src" path="665. Non-decreasing Array"/>
+	<classpathentry kind="src" path="213. House Robber II"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="src" path="3. Longest Substring Without Repeating Characters"/>
+	<classpathentry kind="src" path="500. Keyboard Row"/>
+	<classpathentry kind="src" path="412. Fizz Buzz"/>
+	<classpathentry kind="src" path="344. Reverse String"/>
+	<classpathentry kind="src" path="520. Detect Capital"/>
+	<classpathentry kind="src" path="389. Find the Difference"/>
+	<classpathentry kind="src" path="557. Reverse Words in a String III"/>
+	<classpathentry kind="src" path="521. Longest Uncommon Subsequence I"/>
+	<classpathentry kind="src" path="383. Ransom Note"/>
+	<classpathentry kind="src" path="387. First Unique Character in a String"/>
+	<classpathentry kind="src" path="171. Excel Sheet Column Number"/>
+	<classpathentry kind="src" path="242. Valid Anagram"/>
+	<classpathentry kind="src" path="504. Base 7"/>
+	<classpathentry kind="src" path="409. Longest Palindrome"/>
+	<classpathentry kind="src" path="13. Roman to Integer"/>
+	<classpathentry kind="src" path="541. Reverse String II"/>
+	<classpathentry kind="src" path="415. Add Strings"/>
+	<classpathentry kind="src" path="405. Convert a Number to Hexadecimal"/>
+	<classpathentry kind="src" path="551. Student Attendance Record I"/>
+	<classpathentry kind="src" path="345. Reverse Vowels of a String"/>
+	<classpathentry kind="src" path="290. Word Pattern"/>
+	<classpathentry kind="src" path="205. Isomorphic Strings"/>
+	<classpathentry kind="src" path="20. Valid Parentheses"/>
+	<classpathentry kind="src" path="58. Length of Last Word"/>
+	<classpathentry kind="src" path="8. String to Integer (atoi)"/>
+	<classpathentry kind="src" path="168. Excel Sheet Column Title"/>
+	<classpathentry kind="src" path="459. Repeated Substring Pattern"/>
+	<classpathentry kind="src" path="14. Longest Common Prefix"/>
+	<classpathentry kind="src" path="125. Valid Palindrome"/>
+	<classpathentry kind="src" path="28. Implement strStr()"/>
+	<classpathentry kind="src" path="537. Complex Number Multiplication"/>
+	<classpathentry kind="src" path="438. Find All Anagrams in a String"/>
+	<classpathentry kind="src" path="657. Judge Route Circle"/>
+	<classpathentry kind="src" path="266. Palindrome Permutation"/>
+	<classpathentry kind="src" path="243. Shortest Word Distance"/>
+	<classpathentry kind="src" path="293. Flip Game"/>
+	<classpathentry kind="src" path="246. Strobogrammatic Number"/>
+	<classpathentry kind="src" path="408. Valid Word Abbreviation"/>
+	<classpathentry kind="src" path="682. Baseball Game"/>
+	<classpathentry kind="src" path="686. Repeated String Match"/>
+	<classpathentry kind="src" path="340. Longest Substring with At Most K Distinct Characters"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="434. Number of Segments in a String"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

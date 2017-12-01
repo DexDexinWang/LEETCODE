@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="2. Add Two Numbers"/>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="src" path="237. Delete Node in a Linked List"/>
+	<classpathentry kind="src" path="206. Reverse Linked List"/>
+	<classpathentry kind="src" path="83. Remove Duplicates from Sorted List"/>
+	<classpathentry kind="src" path="21. Merge Two Sorted Lists"/>
+	<classpathentry kind="src" path="141. Linked List Cycle"/>
+	<classpathentry kind="src" path="203. Remove Linked List Elements"/>
+	<classpathentry kind="src" path="445. Add Two Numbers II"/>
+	<classpathentry kind="src" path="234. Palindrome Linked List"/>
+	<classpathentry kind="src" path="160. Intersection of Two Linked Lists"/>
+	<classpathentry kind="src" path="61. Rotate List"/>
+	<classpathentry kind="src" path="148. Sort List"/>
+	<classpathentry kind="src" path="328. Odd Even Linked List"/>
+	<classpathentry kind="src" path="92. Reverse Linked List II"/>
+	<classpathentry kind="src" path="24. Swap Nodes in Pairs"/>
+	<classpathentry kind="src" path="82. Remove Duplicates from Sorted List II"/>
+	<classpathentry kind="src" path="143. Reorder List"/>
+	<classpathentry kind="src" path="19. Remove Nth Node From End of List"/>
+	<classpathentry kind="src" path="86. Partition List"/>
+	<classpathentry kind="src" path="142. Linked List Cycle II"/>
+	<classpathentry kind="src" path="147. Insertion Sort List"/>
+	<classpathentry kind="src" path="109. Convert Sorted List to Binary Search Tree"/>
+	<classpathentry kind="src" path="138. Copy List with Random Pointer"/>
+	<classpathentry kind="src" path="369. Plus One Linked List"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

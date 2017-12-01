@@ -1,0 +1,16 @@
+The Hamming distance between two strings of equal length is the number of positions at which the corresponding symbols are different.
+In other words, it measures the minimum number of substitutions required to change one string into the other, 
+or the minimum number of errors that could have transformed one string into the other.
+
+Time Complexity: O(1)
+
+Consideration:
+1. The primary idea is XOR 
+INPUT	OUTPUT
+A	B	A XOR B
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+
+2. We could just count the number of "1" from A XOR B. 

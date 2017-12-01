@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="src" path="104. Maximum Depth of Binary Tree"/>
+	<classpathentry kind="src" path="226. Invert Binary Tree"/>
+	<classpathentry kind="src" path="530. Minimum Absolute Difference in BST"/>
+	<classpathentry kind="src" path="404. Sum of Left Leaves"/>
+	<classpathentry kind="src" path="543. Diameter of Binary Tree"/>
+	<classpathentry kind="src" path="108. Convert Sorted Array to Binary Search Tree"/>
+	<classpathentry kind="src" path="100. Same Tree"/>
+	<classpathentry kind="src" path="437. Path Sum III"/>
+	<classpathentry kind="src" path="107. Binary Tree Level Order Traversal II"/>
+	<classpathentry kind="src" path="235. Lowest Common Ancestor of a Binary Search Tree"/>
+	<classpathentry kind="src" path="501. Find Mode in Binary Search Tree"/>
+	<classpathentry kind="src" path="563. Binary Tree Tilt"/>
+	<classpathentry kind="src" path="257. Binary Tree Paths"/>
+	<classpathentry kind="src" path="110. Balanced Binary Tree"/>
+	<classpathentry kind="src" path="572. Subtree of Another Tree"/>
+	<classpathentry kind="src" path="101. Symmetric Tree"/>
+	<classpathentry kind="src" path="112. Path Sum"/>
+	<classpathentry kind="src" path="111. Minimum Depth of Binary Tree"/>
+	<classpathentry kind="src" path="606. Construct String from Binary Tree"/>
+	<classpathentry kind="src" path="617. Merge Two Binary Trees"/>
+	<classpathentry kind="src" path="513. Find Bottom Left Tree Value"/>
+	<classpathentry kind="src" path="337. House Robber III"/>
+	<classpathentry kind="src" path="95. Unique Binary Search Trees II"/>
+	<classpathentry kind="src" path="637. Average of Levels in Binary Tree"/>
+	<classpathentry kind="src" path="538. Convert BST to Greater Tree"/>
+	<classpathentry kind="src" path="270. Closest Binary Search Tree Value"/>
+	<classpathentry kind="src" path="623. Add One Row to Tree"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

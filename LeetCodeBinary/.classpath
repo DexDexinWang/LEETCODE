@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="src" path="461. Hamming Distance"/>
+	<classpathentry kind="src" path="476. Number Complement"/>
+	<classpathentry kind="src" path="371. Sum of Two Integers"/>
+	<classpathentry kind="src" path="258. Add Digits"/>
+	<classpathentry kind="src" path="191. Number of 1 Bits"/>
+	<classpathentry kind="src" path="342. Power of Four"/>
+	<classpathentry kind="src" path="338. Counting Bits"/>
+	<classpathentry kind="src" path="67. Add Binary"/>
+	<classpathentry kind="src" path="477. Total Hamming Distance"/>
+	<classpathentry kind="src" path="421. Maximum XOR of Two Numbers in an Array"/>
+	<classpathentry kind="src" path="397. Integer Replacement"/>
+	<classpathentry kind="src" path="393. UTF-8 Validation"/>
+	<classpathentry kind="src" path="137. Single Number II"/>
+	<classpathentry kind="src" path="190. Reverse Bits"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

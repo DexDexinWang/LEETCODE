@@ -1,0 +1,191 @@
+http://blog.csdn.net/wisgood/article/details/16541013
+
+Arrays.sort(T[], Comparator < ? super T > c) 方法用于对象数组按用户自定义规则排序.
+官方Java文档只是简要描述此方法的作用,并未进行详细的介绍,本文将深入解析此方法。
+1. 简单示例
+sort方法的使用非常的简单明了,下面的例子中,先定义一个比较Dog大小的Comparator,然后将其实例对象作为参数传给sort方法,通过此示例,你应该能够快速掌握Arrays.sort()的使用方法。
+[java] view plaincopy 
+import java.util.Arrays;  
+import java.util.Comparator;  
+   
+class Dog{  
+    int size;     
+    public Dog(int s){  
+        size = s;  
+    }  
+}  
+   
+class DogSizeComparator implements Comparator<Dog>{  
+   
+    @Override  
+    public int compare(Dog o1, Dog o2) {  
+        return o1.size - o2.size;  
+    }  
+}  
+   
+public class ArraySort {  
+   
+    public static void main(String[] args) {  
+        Dog d1 = new Dog(2);  
+        Dog d2 = new Dog(1);  
+        Dog d3 = new Dog(3);  
+   
+        Dog[] dogArray = {d1, d2, d3};  
+        printDogs(dogArray);  
+   
+        Arrays.sort(dogArray, new DogSizeComparator());   
+        printDogs(dogArray);  
+    }  
+   
+    public static void printDogs(Dog[] dogs){  
+        for(Dog d: dogs)  
+            System.out.print(d.size + " " );  
+   
+        System.out.println();  
+    }  
+}  
+输出为:
+[plain] view plaincopy 
+2 1 3  
+1 2 3  
+
+2. 使用策略模式
+这是策略模式(Strategy pattern)的一个完美又简洁的示例,值得一提的是为什么这种场景下适合使用策略模式.
+总体来说,策略模式允许在程序执行时选择不同的算法.比如在排序时,传入不同的比较器(Comparator),就采用不同的算法.
+根据上面的例子,假设你想要根据Dog的重量来进行排序,可以像下面这样,创建一个新的比较器来进行排序:
+[java] view plaincopy 
+class Dog{  
+    int size;  
+    int weight;  
+   
+    public Dog(int s, int w){  
+        size = s;  
+        weight = w;   
+    }  
+}  
+   
+class DogSizeComparator implements Comparator<Dog>{  
+   
+    @Override  
+    public int compare(Dog o1, Dog o2) {  
+        return o1.size - o2.size;  
+    }  
+}  
+   
+class DogWeightComparator implements Comparator<Dog>{  
+   
+    @Override  
+    public int compare(Dog o1, Dog o2) {  
+        return o1.weight - o2.weight;  
+    }  
+}  
+   
+public class ArraySort {  
+   
+    public static void main(String[] args) {  
+        Dog d1 = new Dog(2, 50);  
+        Dog d2 = new Dog(1, 30);  
+        Dog d3 = new Dog(3, 40);  
+   
+        Dog[] dogArray = {d1, d2, d3};  
+        printDogs(dogArray);  
+   
+        Arrays.sort(dogArray, new DogSizeComparator());   
+        printDogs(dogArray);  
+   
+        Arrays.sort(dogArray, new DogWeightComparator());     
+        printDogs(dogArray);  
+    }  
+   
+    public static void printDogs(Dog[] dogs){  
+        for(Dog d: dogs)  
+            System.out.print("size="+d.size + " weight=" + d.weight + " ");  
+   
+        System.out.println();  
+    }  
+}  
+执行结果:
+[plain] view plaincopy 
+size=2 weight=50 size=1 weight=30 size=3 weight=40  
+size=1 weight=30 size=2 weight=50 size=3 weight=40  
+size=1 weight=30 size=3 weight=40 size=2 weight=50  
+Comparator 是一个接口,所以sort方法中可以传入任意实现了此接口的类的实例,这就是策略模式的主要思想.
+
+3. 为何使用"super"
+如果使用 "Comparator < T > c" 那是很简单易懂的,但是sort的第2个参数里面的 < ? super T > 意味着比较器所接受的类型可以是T或者它的超类. 为什么是超类呢? 答案是: 这允许使用同一个比较器对不同的子类对象进行比较.在下面的示例中很明显地演示了这一点:
+[java] view plaincopy 
+import java.util.Arrays;  
+import java.util.Comparator;  
+   
+class Animal{  
+    int size;  
+}  
+   
+class Dog extends Animal{  
+    public Dog(int s){  
+        size = s;  
+    }  
+}  
+   
+class Cat extends Animal{  
+    public Cat(int s){  
+        size  = s;  
+    }  
+}  
+   
+class AnimalSizeComparator implements Comparator<Animal>{  
+   
+    @Override  
+    public int compare(Animal o1, Animal o2) {  
+        return o1.size - o2.size;  
+    }  
+    //in this way, all sub classes of Animal can use this comparator.  
+}  
+   
+public class ArraySort {  
+   
+    public static void main(String[] args) {  
+        Dog d1 = new Dog(2);  
+        Dog d2 = new Dog(1);  
+        Dog d3 = new Dog(3);  
+   
+        Dog[] dogArray = {d1, d2, d3};  
+        printDogs(dogArray);  
+   
+        Arrays.sort(dogArray, new AnimalSizeComparator());    
+        printDogs(dogArray);  
+   
+        System.out.println();  
+   
+        //when you have an array of Cat, same Comparator can be used.   
+        Cat c1 = new Cat(2);  
+        Cat c2 = new Cat(1);  
+        Cat c3 = new Cat(3);  
+   
+        Cat[] catArray = {c1, c2, c3};  
+        printDogs(catArray);  
+   
+        Arrays.sort(catArray, new AnimalSizeComparator());    
+        printDogs(catArray);  
+    }  
+   
+    public static void printDogs(Animal[] animals){  
+        for(Animal a: animals)  
+            System.out.print("size="+a.size + " ");  
+   
+        System.out.println();  
+    }  
+}  
+输出结果:
+[plain] view plaincopy 
+size=2 size=1 size=3  
+size=1 size=2 size=3  
+size=2 size=1 size=3  
+size=1 size=2 size=3  
+
+4. 小结
+与Arrays.sort()相关的信息总结如下:
+通用: super 类
+策略设计模式(strategy pattern);
+归并排序(merge sort): 时间复杂度 n*log(n);
+Java.util.Collections#sort(List < T > list, Comparator < ? super T > c)与Arrays.sort 使用类似的思想.

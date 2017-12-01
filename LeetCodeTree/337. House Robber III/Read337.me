@@ -1,0 +1,52 @@
+Let
+
+f1(node) be the value of maximum money we can rob from the subtree with node as root ( we can rob node if necessary).
+
+f2(node) be the value of maximum money we can rob from the subtree with node as root but without robbing node.
+
+Then we have
+
+f2(node) = f1(node.left) + f1(node.right) and
+
+f1(node) = max( f2(node.left)+f2(node.right)+node.value, f2(node) ).
+
+C++
+class Solution {
+public:
+    int rob(TreeNode* root) {
+        return robDFS(root).second;
+    }
+    pair<int, int> robDFS(TreeNode* node){
+        if( !node) return make_pair(0,0);
+        auto l = robDFS(node->left);
+        auto r = robDFS(node->right);
+        int f2 = l.second + r.second;
+        int f1 = max(f2, l.first + r.first + node->val);
+        return make_pair(f2, f1);
+    }
+};
+JAVA
+public class Solution {
+    public int rob(TreeNode root) {
+        return robDFS(root)[1];
+    }
+    int[] robDFS(TreeNode node){
+        int [] res = new int[2];
+        if(node==null) return res;
+        int [] l = robDFS(node.left);
+        int [] r = robDFS(node.right);
+        res[0] = l[1] + r[1];
+        res[1] = Math.max(res[0], l[0] + r[0] + node.val);
+        return res;
+    }
+}
+PYTHON
+class Solution(object):
+    def rob(self, root):
+        return self.robDFS(root)[1];
+    def robDFS(self,node):
+        if node is None:
+            return (0,0)
+        l = self.robDFS(node.left)
+        r = self.robDFS(node.right)
+        return (l[1] + r[1], max(l[1] + r[1], l[0] + r[0] + node.val))

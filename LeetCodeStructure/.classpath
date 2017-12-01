@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="232. Implement Queue using Stacks"/>
+	<classpathentry kind="src" path="225. Implement Stack using Queues"/>
+	<classpathentry kind="src" path="303. Range Sum Query - Immutable"/>
+	<classpathentry kind="src" path="155. Min Stack"/>
+	<classpathentry kind="src" path="604. Design Compressed String Iterator"/>
+	<classpathentry kind="src" path="359. Logger Rate Limiter"/>
+	<classpathentry kind="src" path="346. Moving Average from Data Stream"/>
+	<classpathentry kind="src" path="170. Two Sum III - Data structure design"/>
+	<classpathentry kind="src" path="382. Linked List Random Node"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="535. Encode and Decode TinyURL"/>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
