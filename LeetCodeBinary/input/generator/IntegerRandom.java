@@ -19,7 +19,7 @@ public class IntegerRandom
 	 */
 	public static int range()
 	{
-		return ThreadLocalRandom.current().nextInt(MIN, MAX);
+		return range(MIN, MAX);
 	}
 	
 	/**
