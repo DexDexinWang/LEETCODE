@@ -1,44 +1,43 @@
+import java.util.Arrays;
 
 public class KClosestInSortedArray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int[] res = kClosest(new int[] {5,2}, 2,2);
+		System.out.print(Arrays.toString(res));
 	}
 	
-	public int[] kClosest(int[] array, int target, int k) {
+	public static int[] kClosest(int[] array, int target, int k) {
+	    //Find the most closest target. Then, it should find the next k - 1 targets 
 	    if (array == null || array.length == 0) {
-	      return new int[0];
-	    }
-	    int left = closest(array, target);
-			int right = left + 1;
-	    int res[] = new int[k];
-	    for(int i = 0; i < k; i++) {
-	      if (right >= array.length || left >= 0 && (Math.abs(array[left] - target) < Math.abs(array[right] - target))) {
-	        res[i] = array[left--];
-	      }  else {
-	        res[i] = array[right++];
+	      return null;
+	    } 
+	    int i = findClosest(array, target);
+	    int j = i + 1;
+	    int[] res = new int[k];
+	    for (int l = 0; l < k ; l++) {
+	      if (j > array.length - 1 || i >= 0 && Math.abs(array[i] - target) < Math.abs(array[j] - target)) {
+	        res[l] = array[i--];
+	      } else {
+	        res[l] = array[j++];
 	      }
 	    }
 	    return res;
 	  }
 	  
-	  
-	  private int closest(int[] array, int target) {
-	    int left = 0;
-	    int right = array.length - 1;
-	    while (left < right - 1) {
-	      int mid = left + (right - left) / 2;
+	  private static int findClosest(int[] array, int target) {
+	    int i = 0;
+	    int j = array.length - 1;
+	    while (i < j - 1) {
+	      int mid = i + (j - i) / 2; // find upper bound to avoid dead lock
 	      if (array[mid] == target) {
 	        return mid;
 	      } else if (array[mid] < target) {
-	        left = mid;
+	        i = mid;
 	      } else {
-	        right = mid;
+	        j = mid;
 	      }
 	    }
-	    return Math.abs(array[left] - target) <
-	           Math.abs(array[right] - target) ?
-	           left : right;
+	    return Math.abs(array[i] - target) < Math.abs(array[j] - target) ? i : j;
 	  }
 }
