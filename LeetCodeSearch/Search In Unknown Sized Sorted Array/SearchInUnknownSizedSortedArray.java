@@ -7,7 +7,7 @@ public class SearchInUnknownSizedSortedArray {
 
 	}
 	
-	 public int search(Dictionary dict, int target) {
+	 public static int search(Dictionary dict, int target) {
 		    if (dict == null) {
 		      return -1;
 		    }

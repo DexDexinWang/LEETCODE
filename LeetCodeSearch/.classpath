@@ -9,6 +9,9 @@
 	<classpathentry kind="src" path="K Closest In Sorted Array"/>
 	<classpathentry kind="src" path="Smallest Element Larger than Target"/>
 	<classpathentry kind="src" path="Search In Unknown Sized Sorted Array"/>
+	<classpathentry kind="src" path="4. Median of Two Sorted Arrays"/>
+	<classpathentry kind="src" path="K-th Element of Two Sorted Arrays"/>
+	<classpathentry kind="src" path="852. Peak Index in a Mountain Array"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/LeetCodeCaseGenerator"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
