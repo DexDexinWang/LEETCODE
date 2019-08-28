@@ -12,6 +12,9 @@
 	<classpathentry kind="src" path="4. Median of Two Sorted Arrays"/>
 	<classpathentry kind="src" path="K-th Element of Two Sorted Arrays"/>
 	<classpathentry kind="src" path="852. Peak Index in a Mountain Array"/>
+	<classpathentry kind="src" path="744. Find Smallest Letter Greater Than Target"/>
+	<classpathentry kind="src" path="278. First Bad Version"/>
+	<classpathentry kind="src" path="69. Sqrt(x)"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/LeetCodeCaseGenerator"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

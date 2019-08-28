@@ -1,4 +1,4 @@
-import Interfaces.Dictionary;
+import interfaces.Dictionary;
 
 public class SearchInUnknownSizedSortedArray {
 

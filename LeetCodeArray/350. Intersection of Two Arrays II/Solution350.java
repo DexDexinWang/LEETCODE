@@ -40,11 +40,7 @@ public class Solution350 {
         {
         	if(counter.containsKey(i))
         	{
-        		counter.put(i, counter.get(i)+1);
-        	}
-        	else
-        	{
-        		counter.put(i, 1);
+        		counter.put(i, counter.getOrDefault(i, 0)+1);
         	}
         }
         

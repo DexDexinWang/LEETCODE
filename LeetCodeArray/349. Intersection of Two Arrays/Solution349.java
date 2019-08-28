@@ -17,6 +17,7 @@ Each element in the result must be unique.
 The result can be in any order.
 */
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.HashSet;
@@ -53,6 +54,33 @@ public class Solution349 {
     	for(int i: temp2)
     	{
     		result[x++]= i;
+    	}
+    	return result;
+    } 
+    
+    public static int[] intersection2(int[] nums1, int[] nums2) 
+    {
+    	Arrays.sort(nums1);
+    	Arrays.sort(nums2);
+    	Set<Integer> tempSet = new HashSet<>();
+    	int i = 0;
+    	int j = 0;
+    	while (i < nums1.length && j < nums2.length) {
+    		if (nums1[i] == nums2[j]) {
+    			tempSet.add(nums1[i]);
+    			i++;
+    			j++;
+    		} else if (nums1[i] < nums2[j]) {
+    			i++;
+    		} else {
+    			j++;
+    		}
+    	}
+    	int[] result = new int[tempSet.size()];
+    	int x=0;
+    	for(int k: tempSet)
+    	{
+    		result[x++]= k;
     	}
     	return result;
     }

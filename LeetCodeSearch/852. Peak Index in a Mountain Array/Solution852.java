@@ -43,5 +43,7 @@ public class Solution852 {
 			}
 		}
 	}
+	//Time complexity: O(n) 
+	//Space complexity: O(n)
 	
 }
