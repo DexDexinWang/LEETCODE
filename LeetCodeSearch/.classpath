@@ -15,6 +15,9 @@
 	<classpathentry kind="src" path="744. Find Smallest Letter Greater Than Target"/>
 	<classpathentry kind="src" path="278. First Bad Version"/>
 	<classpathentry kind="src" path="69. Sqrt(x)"/>
+	<classpathentry kind="src" path="374. Guess Number Higher or Lower"/>
+	<classpathentry kind="src" path="35. Search Insert Position"/>
+	<classpathentry kind="src" path="441. Arranging Coins"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/LeetCodeCaseGenerator"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
