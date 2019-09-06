@@ -5,11 +5,11 @@ public class ClosestInSortedArray {
 		// TODO Auto-generated method stub
 
 	}
-
-	public static int binarySearch(int[] array, int target) {
-	    //It`s another converted binary search question. It could be solved with 2 pointers: i and j
-	    //All elements in left side of i are smaller than target
-	    //ALl elements in right side of j are bigger than target
+	//Binary Search will define 2 pointers: left or right;
+	//i means left, it indicated that all elements in left side of i are smaller than target (excluded i) 
+	//j means right, it shows that all elements in right side of j are bigger than target (excluded j)
+	//All elements between i and j will be checked. 
+	public static int binarySearch(int[] array, int target) {	
 	    //corner cases
 	    if (array == null || array.length == 0) {
 	      return -1;
@@ -21,7 +21,7 @@ public class ClosestInSortedArray {
 	      if (array[mid] == target) {
 	        return mid;
 	      } else if (array[mid] > target) {
-	        j = mid; // it should keep the value, the mid value may be the closet value.
+	        j = mid; 
 	      } else {
 	        i = mid;
 	      }

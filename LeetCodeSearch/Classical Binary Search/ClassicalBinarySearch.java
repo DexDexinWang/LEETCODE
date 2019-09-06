@@ -10,10 +10,10 @@ public class ClassicalBinarySearch {
 		System.out.println(binarySearch(input, 5));
 	}
 	
-	//In general, this kind problem could be solved by 2 points such as i and j  
-	//all elements in the left side of i are smaller than target.
-	//all elements in right side of j are bigger than target.
-	//all elements between left and right are undefined. 
+	//Binary Search will define 2 pointers: left or right;
+	//i means left, it indicated that all elements in left side of i are smaller than target (excluded i) 
+	//j means right, it shows that all elements in right side of j are bigger than target (excluded j)
+	//All elements between i and j will be checked. 
 	public static int binarySearch(int[] array, int target) {
 		//corner cases 
 		if (array == null || array.length == 0) {

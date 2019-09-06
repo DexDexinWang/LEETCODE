@@ -18,6 +18,8 @@
 	<classpathentry kind="src" path="374. Guess Number Higher or Lower"/>
 	<classpathentry kind="src" path="35. Search Insert Position"/>
 	<classpathentry kind="src" path="441. Arranging Coins"/>
+	<classpathentry kind="src" path="1064. Fixed Point"/>
+	<classpathentry kind="src" path="1150. Check If a Number Is Majority Element in a Sorted Array"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/LeetCodeCaseGenerator"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

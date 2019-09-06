@@ -14,10 +14,10 @@ public class LastOccurrence {
 		 int j = array.length - 1;
 		 while (i < j - 1) {
 			 int mid = i +  (j - i) / 2;
-			 if (array[mid] < target) {
-				 i = mid + 1;
+			 if (array[mid] > target) {
+				 j = mid - 1;
 			 } else {
-				 j = mid;
+				 i = mid;
 			 }
 		 }
 		 if (array[j] == target) {
