@@ -6,17 +6,20 @@
  *  @email  Edgar_wdx@hotmail.com
  */
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 import generator.LinkedListRandom;
 import generator.ListNode;
 
 public class Solution369 {
 	public static void main(String[] args) 
 	{
-		ListNode input = LinkedListRandom.LLGen(5, 8, 9);
+		ListNode input = LinkedListRandom.genFromArray(new int[] {9});
 		input.print();
 		System.out.println();
 
-		ListNode output = plusOne(input);
+		ListNode output = plusOne1(input);
 		output.print();
 		System.out.println();
 	}
@@ -57,6 +60,34 @@ public class Solution369 {
     	{
     		return dummy;
     	}
+    }
+    
+    public static ListNode plusOne1(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        Deque<ListNode> stack = new LinkedList<>();
+        ListNode curr = head;
+        while(curr!= null) {
+            stack.offerLast(curr);
+            curr = curr.next;
+        }
+        
+        int count = 1;
+        
+        while (stack.size() != 0) {
+            ListNode cur = stack.pollLast();
+            int sum = cur.val + count;
+            cur.val = sum % 10;
+            count = sum / 10;
+        }
+        
+        if (count == 1) {
+            ListNode newHead = new ListNode(1);
+            newHead.next = head;
+            head =newHead;
+        }
+        return head;
     }
 
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="937. Reorder Data in Log Files"/>
+	<classpathentry kind="src" path="1167. Minimum Cost to Connect Sticks"/>
+	<classpathentry kind="src" path="AmazonOA 2019Optimal Utilization"/>
+	<classpathentry kind="src" path="AmazonOA2019Treasure Island"/>
+	<classpathentry kind="src" path="Amazon OA 2019 Treasure Island II"/>
+	<classpathentry kind="src" path="1192. Critical Connections in a Network"/>
+	<classpathentry kind="src" path="AmazonOA 2019Favorite Genres"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

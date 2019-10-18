@@ -14,6 +14,9 @@ Could you do it in O(n) time and O(1) space?
 
  */
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 import generator.LinkedListRandom;
 import generator.ListNode;
 
@@ -21,9 +24,10 @@ public class Solution234 {
 
 	public static void main(String[] args) 
 	{
-		ListNode input = LinkedListRandom.LLGen(5, 0, 1);
+		int[] list = new int[] {1,2,2,1};
+		ListNode input = LinkedListRandom.genFromArray(list);
 		input.print();
-		System.out.println("\n"+ isPalindrome(input));
+		System.out.println("\n"+ isPalindrome1(input));
 	}
 	
     public static boolean isPalindrome(ListNode head) 
@@ -56,6 +60,37 @@ public class Solution234 {
     		post=post.next;
     	}
     	return true;
+    }
+    
+    
+    public static boolean isPalindrome1(ListNode head) {
+        if (head == null || head.next == null) {
+            return true;
+        } else if (head.next.next == null) {
+            return head.val == head.next.val;
+        }
+        
+        Deque<ListNode> stack = new LinkedList<>();
+        ListNode slow = head;
+        ListNode fast = head;
+        stack.offerLast(slow);
+        while (fast.next!= null && fast.next.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            stack.offerLast(slow);
+        }
+        if (fast.next == null) {
+            stack.pollLast();
+        }
+        slow = slow.next;
+        while (slow != null) {
+            ListNode target = stack.pollLast();
+            if (target.val != slow.val) {
+                return false;
+            }
+            slow = slow.next;
+        }
+        return stack.size() == 0;
     }
 
 }

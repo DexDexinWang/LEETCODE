@@ -13,6 +13,9 @@ tree consists of a node in s and all of this node's descendants. The tree s
 could also be considered as a subtree of itself.
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 import generator.TreeNode;
 import generator.TreeRandom;
 
@@ -43,5 +46,40 @@ public class Solution572 {
     	sb.append(","+root.val);
     	transfer(root.left,sb);
     	transfer(root.right,sb);
+    }
+    
+    public boolean isSubtree2(TreeNode s, TreeNode t) {
+        if (s == null || t == null) {
+            return false;
+        }
+        List<TreeNode> listRoots = new ArrayList<>();
+        findNode(s, t, listRoots);
+        for (TreeNode begin : listRoots) {
+            return isSameTree(begin, t);
+        }
+        return false;
+    }
+    
+    private void findNode(TreeNode s, TreeNode t, List<TreeNode> listRoots) {
+        if (s!= null && t!= null && s.val == t.val) {
+            listRoots.add(s);
+        }
+        if (s!= null) {
+            findNode(s.left,  t, listRoots); 
+            findNode(s.right, t, listRoots);
+        }
+    }
+    
+    private boolean isSameTree(TreeNode s, TreeNode t) {
+        if (s == null && t == null){
+            return true;
+        } else if (s == null) {
+            return false;
+        } else if (t!= null) {
+            return isSameTree(s.left, t.left) && isSameTree(s.right, t.right);
+        } else {
+            return true;
+        }
+        
     }
 }

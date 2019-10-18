@@ -14,11 +14,9 @@ public class Solution90 {
 	public static void main(String[] args) 
 	{
 		int[] input = ArrayRandom.arrayGen(10, 0, 10);
-		System.out.println(Arrays.toString(input));
-		System.out.println(Arrays.deepToString(subsetsWithDup(input)));
 	}
 
     public static List<List<Integer>> subsetsWithDup(int[] nums) {
-        
+        return null;
     }
 }

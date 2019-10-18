@@ -25,6 +25,9 @@
 	<classpathentry kind="src" path="109. Convert Sorted List to Binary Search Tree"/>
 	<classpathentry kind="src" path="138. Copy List with Random Pointer"/>
 	<classpathentry kind="src" path="369. Plus One Linked List"/>
+	<classpathentry kind="src" path="707. Design Linked List"/>
+	<classpathentry kind="src" path="817. Linked List Components"/>
+	<classpathentry kind="src" path="1019. Next Greater Node In Linked List"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

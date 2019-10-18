@@ -57,4 +57,18 @@ public class LinkedListRandom
 		}
 		return head;
 	}
+	
+	public static ListNode genFromArray(int[] input) {
+		ListNode dummy = new ListNode(-1);
+		if (input == null || input.length ==0) {
+			return dummy.next;
+		}
+		ListNode head = dummy;
+		for(int num: input) {
+			ListNode node = new ListNode(num);
+			head.next = node; 
+			head = head.next;
+		}
+		return dummy.next;
+	}
 }
