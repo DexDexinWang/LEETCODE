@@ -6,5 +6,9 @@
 	<classpathentry kind="src" path="5223. Queens That Can Attack the King"/>
 	<classpathentry kind="src" path="5224. Dice Roll Simulation"/>
 	<classpathentry kind="src" path="5225. Maximum Equal Frequency"/>
+	<classpathentry kind="src" path="5216. Count Vowels Permutation"/>
+	<classpathentry kind="src" path="5213. Play with Chips"/>
+	<classpathentry kind="src" path="5214. Longest Arithmetic Subsequence of Given Difference"/>
+	<classpathentry kind="src" path="5215. Path with Maximum Gold"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
