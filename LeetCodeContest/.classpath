@@ -10,5 +10,9 @@
 	<classpathentry kind="src" path="5213. Play with Chips"/>
 	<classpathentry kind="src" path="5214. Longest Arithmetic Subsequence of Given Difference"/>
 	<classpathentry kind="src" path="5215. Path with Maximum Gold"/>
+	<classpathentry kind="src" path="5238. Find Positive Integer Solution for a Given Equation"/>
+	<classpathentry kind="src" path="5240. Maximum Length of a Concatenated String with Unique Characters"/>
+	<classpathentry kind="src" path="5239. Circular Permutation in Binary Representation"/>
+	<classpathentry kind="src" path="5241. Tiling a Rectangle with the Fewest Squares"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
