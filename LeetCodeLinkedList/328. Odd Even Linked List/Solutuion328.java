@@ -50,5 +50,4 @@ public class Solutuion328 {
         odd.next=evenHead;
         return head;
     }
-
 }
