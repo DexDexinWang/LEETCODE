@@ -28,6 +28,8 @@
 	<classpathentry kind="src" path="707. Design Linked List"/>
 	<classpathentry kind="src" path="817. Linked List Components"/>
 	<classpathentry kind="src" path="1019. Next Greater Node In Linked List"/>
+	<classpathentry kind="src" path="23. Merge k Sorted Lists"/>
+	<classpathentry kind="src" path="1171. Remove Zero Sum Consecutive Nodes from Linked List"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
