@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="5222. Split a String in Balanced Strings"/>
 	<classpathentry kind="src" path="5223. Queens That Can Attack the King"/>
 	<classpathentry kind="src" path="5224. Dice Roll Simulation"/>
@@ -14,5 +13,9 @@
 	<classpathentry kind="src" path="5240. Maximum Length of a Concatenated String with Unique Characters"/>
 	<classpathentry kind="src" path="5239. Circular Permutation in Binary Representation"/>
 	<classpathentry kind="src" path="5241. Tiling a Rectangle with the Fewest Squares"/>
+	<classpathentry kind="src" path="5247. Minimum Swaps to Make Strings Equal"/>
+	<classpathentry kind="src" path="5248. Count Number of Nice Subarrays"/>
+	<classpathentry kind="src" path="5249. Minimum Remove to Make Valid Parentheses"/>
+	<classpathentry kind="src" path="5250. Check If It Is a Good Array"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

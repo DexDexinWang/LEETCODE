@@ -96,5 +96,6 @@
 	<classpathentry kind="src" path="531. Lonely Pixel I"/>
 	<classpathentry kind="src" path="665. Non-decreasing Array"/>
 	<classpathentry kind="src" path="213. House Robber II"/>
+	<classpathentry kind="src" path="692. Top K Frequent Words"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
