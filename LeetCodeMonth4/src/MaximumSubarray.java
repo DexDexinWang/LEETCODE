@@ -21,18 +21,19 @@ public class MaximumSubarray {
 	
 	//DP
 	//Base case: maxSubSum = nums[0];
-	//principle Rule: maxSubSum = Max(sum(nums[j] to nums[i]), nums[i]);    
+	//principle Rule: maxSubSum = Max(sum(nums[j] to nums[i]), maxSubSum);    
 	public static int maxSubArray1(int[] nums) {
-		if (nums == null || nums.length < 1) {
-			return 0;
-		}
-		int max = Integer.MIN_VALUE;
-		int sum = nums[0];
-		for(int i = 1 ; i < nums.length - 1; i ++) {
-			if (nums[i - 1] > 0) nums[i] += nums[i - 1];
-			sum = Math.max(sum, nums[i]);
-		}
-		return sum;
+		if (nums == null || nums.length <1) {
+            return 0;
+        } 
+        int max = nums[0];
+        for(int i = 1; i < nums.length; i++) {
+            if (nums[i - 1] > 0) {
+                nums[i] += nums[i-1];
+            }
+            max = Math.max(max, nums[i]);
+        }
+        return max;
 	}
 
 	
