@@ -15,35 +15,35 @@
  * int param_4 = obj.getMin();
  */
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
-public class MinStack {
-	  /** initialize your data structure here. */
-	int min = Integer.MAX_VALUE;
-	Stack<Integer> stack = new Stack<Integer>();
-    
-	public MinStack() {
-        
+class MinStack {
+    public Deque<Integer> stack;
+    public Deque<Integer> min;
+    /** initialize your data structure here. */
+    public MinStack() {
+        stack = new LinkedList<>();
+        min = new LinkedList<>();
     }
     
     public void push(int x) {
-        if(x<=min)
-        {
-        	stack.push(min);
-        	min=x;
-        }
-        stack.push(x);
+        stack.offerLast(x);
+        Integer minCompare = min.peekLast();
+        min.offerLast((minCompare == null || x < minCompare) ? x : minCompare);
     }
     
     public void pop() {
-        if(stack.pop()==min) min=stack.pop();
+        stack.pollLast();
+        min.pollLast();
     }
     
     public int top() {
-        return stack.peek();
+        return stack.peekLast();
     }
     
     public int getMin() {
-        return min;
+        return min.peekLast();
     }
 }
