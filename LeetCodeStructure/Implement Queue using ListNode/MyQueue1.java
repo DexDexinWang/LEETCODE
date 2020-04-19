@@ -19,6 +19,7 @@ public class MyQueue1 {
 	        	tail = newNode;
 	        } else {
 	        	tail.next = newNode;
+	        	tail = tail.next;
 	        }
 	    }
 	    
@@ -54,4 +55,4 @@ public class MyQueue1 {
 	        return head == null;
 	    }
 	}
-}
+
