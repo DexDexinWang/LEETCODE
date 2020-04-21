@@ -97,5 +97,7 @@
 	<classpathentry kind="src" path="665. Non-decreasing Array"/>
 	<classpathentry kind="src" path="213. House Robber II"/>
 	<classpathentry kind="src" path="692. Top K Frequent Words"/>
+	<classpathentry kind="src" path="347. Top K Frequent Elements"/>
+	<classpathentry kind="src" path="525. Contiguous Array"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
