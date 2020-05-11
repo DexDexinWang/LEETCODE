@@ -1,4 +1,6 @@
-package generator;
+
+
+import generator.TreeNode;
 
 public class CheckIfaStringIsaValidSequence {
 
