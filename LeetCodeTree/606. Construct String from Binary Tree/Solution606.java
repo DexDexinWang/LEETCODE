@@ -71,4 +71,22 @@ public class Solution606 {
             }
         }
     }
+    
+  //Situations:
+    //1. left and right are not null. return val + (subtree) + (subtree)
+    //2. left and right are null. return val.
+    //3. left is null and right is not null. return val + () + (subtree)
+    //4. left is not null and right is null. return val + (subtree);
+    public String tree2str2(TreeNode t) {
+        if(t == null) {
+            return "";
+        }
+        if (t.left == null && t.right == null) {
+            return t.val + "";
+        }
+        if (t.right == null) {
+            return t.val + "("+tree2str(t.left)+")";
+        }
+        return t.val + "("+tree2str(t.left)+")("+tree2str(t.right)+")";
+    }
 }
