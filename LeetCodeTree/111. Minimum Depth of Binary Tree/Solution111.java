@@ -18,15 +18,19 @@ import generator.TreeRandom;
 public class Solution111 {
 	public static void main(String[] args) {
 		TreeNode input1 = TreeRandom.treeGen(5, null);
-		System.out.println(minDepth(input1));
+		System.out.println(new Solution111().minDepth(input1));
 	}
 	
-    private static int minDepth(TreeNode root) 
-    {
-        if (root==null) return 0;
+	//left, right: expecting min path number from subtrees
+    //current: consider special case if one node only has 1 child, it will only consider that path rather then Null.
+    //return: get min path number from left subtree and right subtree + 1
+    public int minDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
         int left = minDepth(root.left);
         int right = minDepth(root.right);
-        return (left==0 || right ==0) ? left+right+1 : Math.min(left, right)+1;
+        return (root.left == null || root.right == null) ? left + right + 1: Math.min(left, right) + 1;
     }
 
 }

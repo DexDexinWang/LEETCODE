@@ -32,6 +32,9 @@
 	<classpathentry kind="src" path="872. Leaf-Similar Trees"/>
 	<classpathentry kind="src" path="669. Trim a Binary Search Tree"/>
 	<classpathentry kind="src" path="653. Two Sum IV - Input is a BST"/>
+	<classpathentry kind="src" path="783. Minimum Distance Between BST Nodes"/>
+	<classpathentry kind="src" path="687. Longest Univalue Path"/>
+	<classpathentry kind="src" path="1302. Deepest Leaves Sum"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

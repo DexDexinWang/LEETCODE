@@ -34,4 +34,41 @@ public class Solution270 {
         }
         return result;
     }
+    
+   //Iteration find a path. If root.val == target, return root value. 
+    //If root.value > target, min larger value is root, and go left;
+    //If root.value < target, min smaller value is root, and go right;
+    //final calculate diff min larger and min smaller. 
+    public int closestValue1(TreeNode root, double target) {
+        if(root == null) {
+            return 0;
+        } else if (root.left == null && root.right == null) {
+            return root.val;
+        } else {
+            TreeNode minSmaller = null;
+            TreeNode minLarger = null;
+            while (root != null) {
+                if (root.val == target) {
+                    minSmaller = root;
+                    minLarger = root;
+                    return root.val;
+                } else if (root.val > target) {
+                    minLarger = root;
+                    root = root.left;
+                } else {
+                    minSmaller = root;
+                    root = root.right;
+                }
+            }
+            if (minSmaller == minLarger) {
+                return minSmaller.val;
+            } else if (minSmaller == null) {
+                return minLarger.val;
+            } else if (minLarger == null) {
+                return minSmaller.val;
+            } else {
+                return (target - minSmaller.val) > (minLarger.val - target) ? minLarger.val : minSmaller.val;
+            }
+        }
+    }
 }
