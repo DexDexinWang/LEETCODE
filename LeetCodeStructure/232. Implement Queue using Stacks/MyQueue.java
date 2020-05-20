@@ -26,13 +26,13 @@ public class MyQueue {
     }
     
     /** Push element x to the back of queue. */
-    public void push(int x) 
+    public void offer(int x) 
     {
         pushStack.push(x);
     }
     
     /** Removes the element from in front of queue and returns that element. */
-    public int pop() 
+    public int poll() 
     {
         if (popStack.isEmpty())
         {

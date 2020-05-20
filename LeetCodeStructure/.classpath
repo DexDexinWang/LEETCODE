@@ -9,6 +9,10 @@
 	<classpathentry kind="src" path="346. Moving Average from Data Stream"/>
 	<classpathentry kind="src" path="170. Two Sum III - Data structure design"/>
 	<classpathentry kind="src" path="382. Linked List Random Node"/>
+	<classpathentry kind="src" path="Implement Stack using ListNode"/>
+	<classpathentry kind="src" path="Implement Queue using ListNode"/>
+	<classpathentry kind="src" path="Implement Bounded Queue using Array"/>
+	<classpathentry kind="src" path="FirstUniqueNumber"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="535. Encode and Decode TinyURL"/>
 	<classpathentry kind="src" path="input"/>
