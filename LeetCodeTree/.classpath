@@ -35,6 +35,13 @@
 	<classpathentry kind="src" path="783. Minimum Distance Between BST Nodes"/>
 	<classpathentry kind="src" path="687. Longest Univalue Path"/>
 	<classpathentry kind="src" path="1302. Deepest Leaves Sum"/>
+	<classpathentry kind="src" path="230. Kth Smallest Element in a BST"/>
+	<classpathentry kind="src" path="BSTOperations"/>
+	<classpathentry kind="src" path="450. Delete Node in a BST"/>
+	<classpathentry kind="src" path="1315. Sum of Nodes with Even-Valued Grandparent"/>
+	<classpathentry kind="src" path="1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree"/>
+	<classpathentry kind="src" path="701. Insert into a Binary Search Tree"/>
+	<classpathentry kind="src" path="1305. All Elements in Two Binary Search Trees"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
