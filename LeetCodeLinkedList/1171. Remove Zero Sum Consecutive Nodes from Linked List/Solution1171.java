@@ -25,7 +25,6 @@ public class Solution1171 {
             cur = cur.next;
         }
         
-        
         cur = dummy;
         sum = 0;
         while(cur!= null) {
