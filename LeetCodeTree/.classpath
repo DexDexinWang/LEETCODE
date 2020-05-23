@@ -42,6 +42,18 @@
 	<classpathentry kind="src" path="1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree"/>
 	<classpathentry kind="src" path="701. Insert into a Binary Search Tree"/>
 	<classpathentry kind="src" path="1305. All Elements in Two Binary Search Trees"/>
+	<classpathentry kind="src" path="894. All Possible Full Binary Trees"/>
+	<classpathentry kind="src" path="1261. Find Elements in a Contaminated Binary Tree"/>
+	<classpathentry kind="src" path="1325. Delete Leaves With a Given Value"/>
+	<classpathentry kind="src" path="1104. Path In Zigzag Labelled Binary Tree"/>
+	<classpathentry kind="src" path="1120. Maximum Average Subtree"/>
+	<classpathentry kind="src" path="94. Binary Tree Inorder Traversal"/>
+	<classpathentry kind="src" path="429. N-ary Tree Level Order Traversal"/>
+	<classpathentry kind="src" path="1026. Maximum Difference Between Node and Ancestor"/>
+	<classpathentry kind="src" path="1448. Count Good Nodes in Binary Tree"/>
+	<classpathentry kind="src" path="366. Find Leaves of Binary Tree"/>
+	<classpathentry kind="src" path="1110. Delete Nodes And Return Forest"/>
+	<classpathentry kind="src" path="951. Flip Equivalent Binary Trees"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
