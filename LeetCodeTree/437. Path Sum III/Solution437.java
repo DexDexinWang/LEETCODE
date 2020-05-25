@@ -16,9 +16,11 @@ The path does not need to start or end at the root or a leaf, but it must go dow
 The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000.
  */
 
+import java.util.HashMap;
+import java.util.Map;
+
 import generator.TreeNode;
 import generator.TreeRandom;
-import java.util.HashMap;
 
 public class Solution437 {
 
@@ -57,4 +59,23 @@ public class Solution437 {
         map.put(sum, map.get(sum) - 1);
         return res;
 	}
+	
+    int total = 0;
+    public int pathSum1(TreeNode root, int sum) {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0,1);
+        pathSumInorder1(root, 0, sum, map);
+        return total;
+    }
+    
+    private void pathSumInorder1(TreeNode root, int sum, int target, Map<Integer, Integer> map) {
+        if (root == null) return;
+        sum += root.val;
+        int diff = sum - target;
+        if(map.containsKey(diff)) total += map.get(diff);
+        map.put(diff, map.getOrDefault(sum, 0) + 1);
+        pathSumInorder1(root.left, sum, target, map);
+        pathSumInorder1(root.right, sum, target, map);
+        map.put(diff, map.get(sum) - 1);
+    }
 }

@@ -54,6 +54,14 @@
 	<classpathentry kind="src" path="366. Find Leaves of Binary Tree"/>
 	<classpathentry kind="src" path="1110. Delete Nodes And Return Forest"/>
 	<classpathentry kind="src" path="951. Flip Equivalent Binary Trees"/>
+	<classpathentry kind="src" path="113. Path Sum II"/>
+	<classpathentry kind="src" path="666. Path Sum IV"/>
+	<classpathentry kind="src" path="124. Binary Tree Maximum Path Sum"/>
+	<classpathentry kind="src" path="1372. Longest ZigZag Path in a Binary Tree"/>
+	<classpathentry kind="src" path="654. Maximum Binary Tree"/>
+	<classpathentry kind="src" path="814. Binary Tree Pruning"/>
+	<classpathentry kind="src" path="1457. Pseudo-Palindromic Paths in a Binary Tree"/>
+	<classpathentry kind="src" path="515. Find Largest Value in Each Tree Row"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

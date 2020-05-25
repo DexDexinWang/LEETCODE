@@ -30,6 +30,10 @@ public class Solution112 {
 		TreeNode input = TreeRandom.treeGen(5, null);
 		System.out.println(hasPathSum(input,20));
 	}
+	//In order
+    //left and right : expect checking result in subtrees
+    //current: if root is leave, it should check total sum is target or not 
+    //return: whether there is path sum is target
     public static boolean hasPathSum(TreeNode root, int sum) 
     {
         if(root==null) return false;
