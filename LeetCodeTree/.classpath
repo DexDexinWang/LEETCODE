@@ -67,6 +67,13 @@
 	<classpathentry kind="src" path="1028. Recover a Tree From Preorder Traversal"/>
 	<classpathentry kind="src" path="431. Encode N-ary Tree to Binary Tree"/>
 	<classpathentry kind="src" path="145. Binary Tree Postorder Traversal"/>
+	<classpathentry kind="src" path="144. Binary Tree Preorder Traversal"/>
+	<classpathentry kind="src" path="173. Binary Search Tree Iterator"/>
+	<classpathentry kind="src" path="1123. Lowest Common Ancestor of Deepest Leaves"/>
+	<classpathentry kind="src" path="103. Binary Tree Zigzag Level Order Traversal"/>
+	<classpathentry kind="src" path="508. Most Frequent Subtree Sum"/>
+	<classpathentry kind="src" path="285. Inorder Successor in BST"/>
+	<classpathentry kind="src" path="510. Inorder Successor in BST II"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
