@@ -74,6 +74,13 @@
 	<classpathentry kind="src" path="508. Most Frequent Subtree Sum"/>
 	<classpathentry kind="src" path="285. Inorder Successor in BST"/>
 	<classpathentry kind="src" path="510. Inorder Successor in BST II"/>
+	<classpathentry kind="src" path="116. Populating Next Right Pointers in Each Node"/>
+	<classpathentry kind="src" path="117. Populating Next Right Pointers in Each Node II"/>
+	<classpathentry kind="src" path="114. Flatten Binary Tree to Linked List"/>
+	<classpathentry kind="src" path="102. Binary Tree Level Order Traversal"/>
+	<classpathentry kind="src" path="129. Sum Root to Leaf Numbers"/>
+	<classpathentry kind="src" path="96. Unique Binary Search Trees"/>
+	<classpathentry kind="src" path="536. Construct Binary Tree from String"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
