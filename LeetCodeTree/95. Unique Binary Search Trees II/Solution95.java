@@ -27,7 +27,7 @@ import generator.TreeNode;
 public class Solution95 {
 	public static void main(String[] args) 
 	{
-		System.out.println(Arrays.toString(generateTrees(2).toArray()));
+		System.out.println(Arrays.toString(generateTrees(20).toArray()));
 	}
 
 	public static List<TreeNode> generateTrees(int n) 
