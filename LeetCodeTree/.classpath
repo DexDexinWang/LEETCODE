@@ -84,6 +84,14 @@
 	<classpathentry kind="src" path="105. Construct Binary Tree from Preorder and Inorder Traversal"/>
 	<classpathentry kind="src" path="106. Construct Binary Tree from Inorder and Postorder Traversal"/>
 	<classpathentry kind="src" path="889. Construct Binary Tree from Preorder and Postorder Traversal"/>
+	<classpathentry kind="src" path="156. Binary Tree Upside Down"/>
+	<classpathentry kind="src" path="199. Binary Tree Right Side View"/>
+	<classpathentry kind="src" path="222. Count Complete Tree Nodes"/>
+	<classpathentry kind="src" path="236. Lowest Common Ancestor of a Binary Tree"/>
+	<classpathentry kind="src" path="250. Count Univalue Subtrees"/>
+	<classpathentry kind="src" path="1469. Find All the Lonely Nodes"/>
+	<classpathentry kind="src" path="663. Equal Tree Partition"/>
+	<classpathentry kind="src" path="662. Maximum Width of Binary Tree"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
