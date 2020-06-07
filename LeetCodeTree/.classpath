@@ -92,6 +92,12 @@
 	<classpathentry kind="src" path="1469. Find All the Lonely Nodes"/>
 	<classpathentry kind="src" path="663. Equal Tree Partition"/>
 	<classpathentry kind="src" path="662. Maximum Width of Binary Tree"/>
+	<classpathentry kind="src" path="1339. Maximum Product of Splitted Binary Tree"/>
+	<classpathentry kind="src" path="255. Verify Preorder Sequence in Binary Search Tree"/>
+	<classpathentry kind="src" path="298. Binary Tree Longest Consecutive Sequence"/>
+	<classpathentry kind="src" path="449. Serialize and Deserialize BST"/>
+	<classpathentry kind="src" path="1008. Construct Binary Search Tree from Preorder Traversal"/>
+	<classpathentry kind="src" path="297. Serialize and Deserialize Binary Tree"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

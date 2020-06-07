@@ -15,45 +15,77 @@ public class Solution333 {
 		System.out.println(new Solution333().largestBSTSubtree(root1));
 	}
 
-    int max = 0; 
+    //Post-Order
+    //left and right: expecting return 2 values: sutree is bst or not, number of nodes
+    //current: if left and right are subtree, check leftSubTree.max < current.val < rightSubTree.min (if yes, update global), and update nodes.
+    //return: current tree is bst or not, number of nodes
+    int globalMax = 0; 
     public int largestBSTSubtree(TreeNode root) {
         if (root == null) {
             return 0;
         } 
-        largestBSTSubtreePostOrfer(root, null, null);
-        return max;
+        largestBSTSubtreePostOrder(root);
+        return globalMax;
     }
     
-    public Res largestBSTSubtreePostOrfer(TreeNode root, Integer min, Integer max) {
-        if (root == null) return new Res(true,0);
-        if (min != null && root.val <= min) return new Res(false, 0);
-        if (max != null && root.val >= max) return new Res(false, 0);
-        Res left = largestBSTSubtreePostOrfer(root.left, min, root.val);
-        Res right = largestBSTSubtreePostOrfer(root.right, root.val, max);
-        boolean isBST = true;
-        int total = 1;
-        if (left.isBST) {
-            isBST = root.left != null ? root.val > root.left.val : true;
-        } else {
-            isBST = false;
+    public Res largestBSTSubtreePostOrder(TreeNode root) {
+        if (root == null) return new Res(true,0, Integer.MAX_VALUE, Integer.MIN_VALUE);
+        Res left = largestBSTSubtreePostOrder(root.left);
+        Res right = largestBSTSubtreePostOrder(root.right);
+        boolean isBST = false;
+        int total = left.total + right.total + 1;
+        if(left.isBST && right.isBST) {
+            isBST = root.val > left.max && root.val < right.min;
+            if(isBST) globalMax = Math.max(globalMax, total); 
         }
-        if (right.isBST) {
-            isBST = isBST && (root.left != null ? root.val < root.right.val : true);
-        } else {
-            isBST = false;
-        }
-        total += left.total;
-        total += right.total;
-        if (isBST) max = Math.max(max, total);
-        return new Res(isBST, total);
+        int min = root.left == null ? root.val : left.min;
+        int max = root.right == null ? root.val : right.max;
+        return new Res(isBST, total, min, max);
     }
     
     class Res{
         boolean isBST;
         int total;
+        int min;
+        int max;
         public Res(boolean isBST, int total) {
             this.isBST = isBST;
             this.total = total;
         }
+        
+        public Res(boolean isBST, int total, int min, int max) {
+            this.isBST = isBST;
+            this.total = total;
+            this.min = min;
+            this.max = max;
+        }
+        
+        public Res(int total, int min, int max) {
+            this.total = total;
+            this.min = min;
+            this.max = max;
+        }
     }
+    
+    
+    //Post-Order
+    //left and right: expecting return 2 values: sutree is bst or not, number of nodes
+    //current: if left and right are subtree, check leftSubTree.max < current.val < rightSubTree.min (if yes, update global), and update nodes.
+    //return: current tree is bst or not, number of nodes
+    public int largestBSTSubtree1(TreeNode root) {
+        return largestBSTSubtreeHelper(root).total;
+    }
+    
+    public Res largestBSTSubtreeHelper(TreeNode root) {
+        if(root == null) return new Res(Integer.MAX_VALUE, Integer.MIN_VALUE, 0);
+        Res leftRes = largestBSTSubtreeHelper(root.left);
+        Res rightRes = largestBSTSubtreeHelper(root.right);
+        if(root.val > leftRes.max && root.val < rightRes.min) {
+            return new Res(root.left == null ? root.val: leftRes.min, root.right == null ? root.val : rightRes.max, leftRes.total + rightRes.total + 1);
+        } else {
+            return new Res(Integer.MIN_VALUE, Integer.MAX_VALUE, Math.max(leftRes.total, rightRes.total));
+        }
+    }
+    
+ 
 }
