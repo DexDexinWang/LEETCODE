@@ -23,16 +23,12 @@ public class Solution270 {
 		System.out.println("\n"+closestValue(input,5));
 	}
     public static int closestValue(TreeNode root, double target) {
-        int result = root.val;
-        while(root!=null)
-        {
-            if(Math.abs(target-root.val)<Math.abs(target-result))
-            {
-                result = root.val;
-            }
-            root=root.val > target ? root.left: root.right;
+        int closest = root.val;
+        while(root!= null) {
+            closest = Math.abs(root.val - target) < Math.abs(closest - target) ? root.val: closest;
+            root = root.val < target ?  root.right : root.left;
         }
-        return result;
+        return closest;
     }
     
    //Iteration find a path. If root.val == target, return root value. 

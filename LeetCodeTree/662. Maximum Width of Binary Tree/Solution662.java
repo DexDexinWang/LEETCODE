@@ -15,6 +15,37 @@ public class Solution662 {
 		new Solution662().widthOfBinaryTree1(root);
 	}
 	
+    public int widthOfBinaryTree(TreeNode root) {
+        if (root == null) return 0;
+        Deque<CalNode> queue = new LinkedList<>();
+        queue.offerLast(new CalNode(root, 0, 0));
+        int curDepth = 0, left = 0, ans = 0;
+        while(!queue.isEmpty()) {
+            CalNode node = queue.pollFirst();
+            if(node.node != null) {
+                queue.offerLast(new CalNode(node.node.left, node.depth + 1, node.pos * 2));
+                queue.offerLast(new CalNode(node.node.right, node.depth + 1, node.pos * 2 + 1));
+                if(curDepth != node.depth) {
+                    curDepth = node.depth;
+                    left = node.pos;
+                }
+                ans = Math.max(ans, node.pos - left + 1);
+            }
+            
+        }
+        return ans;
+    }
+    
+    class CalNode{
+        TreeNode node;
+        int depth, pos;
+        CalNode(TreeNode n, int d, int p) {
+            this.node = n;
+            this.depth = d;
+            this.pos = p;
+        }
+    }
+	
     public int widthOfBinaryTree1(TreeNode root) {
         if (root == null) return 0;
         if (root.left == null && root.right == null) return 1;

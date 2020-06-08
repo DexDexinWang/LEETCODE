@@ -98,6 +98,8 @@
 	<classpathentry kind="src" path="449. Serialize and Deserialize BST"/>
 	<classpathentry kind="src" path="1008. Construct Binary Search Tree from Preorder Traversal"/>
 	<classpathentry kind="src" path="297. Serialize and Deserialize Binary Tree"/>
+	<classpathentry kind="src" path="272. Closest Binary Search Tree Value II"/>
+	<classpathentry kind="src" path="776. Split BST"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
