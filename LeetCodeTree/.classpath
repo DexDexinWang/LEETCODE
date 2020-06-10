@@ -101,6 +101,8 @@
 	<classpathentry kind="src" path="272. Closest Binary Search Tree Value II"/>
 	<classpathentry kind="src" path="776. Split BST"/>
 	<classpathentry kind="src" path="549. Binary Tree Longest Consecutive Sequence II"/>
+	<classpathentry kind="src" path="582. Kill Process"/>
+	<classpathentry kind="src" path="652. Find Duplicate Subtrees"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
