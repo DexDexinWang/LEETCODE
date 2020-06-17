@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class Solution1257 {
 
@@ -6,7 +11,7 @@ public class Solution1257 {
 
 	}
 	
-	//Treverse tree from child to parent. find the first crossed node and return it.
+	//Traverse tree from child to parent. find the first crossed node and return it.
     public String findSmallestRegion(List<List<String>> regions, String region1, String region2) {
         Map<String, String> tree = new HashMap<>();
         generateTree(regions, tree);

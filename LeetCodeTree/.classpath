@@ -111,6 +111,8 @@
 	<classpathentry kind="src" path="919. Complete Binary Tree Inserter"/>
 	<classpathentry kind="src" path="545. Boundary of Binary Tree"/>
 	<classpathentry kind="src" path="1257. Smallest Common Region"/>
+	<classpathentry kind="src" path="742. Closest Leaf in a Binary Tree"/>
+	<classpathentry kind="src" path="987. Vertical Order Traversal of a Binary Tree"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
