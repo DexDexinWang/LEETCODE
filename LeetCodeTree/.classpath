@@ -115,6 +115,9 @@
 	<classpathentry kind="src" path="987. Vertical Order Traversal of a Binary Tree"/>
 	<classpathentry kind="src" path="1145. Binary Tree Coloring Game"/>
 	<classpathentry kind="src" path="998. Maximum Binary Tree II"/>
+	<classpathentry kind="src" path="1485. Clone Binary Tree With Random Pointer"/>
+	<classpathentry kind="src" path="655. Print Binary Tree"/>
+	<classpathentry kind="src" path="863. All Nodes Distance K in Binary Tree"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
