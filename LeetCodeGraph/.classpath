@@ -5,5 +5,10 @@
 	<classpathentry kind="src" path="997. Find the Town Judge"/>
 	<classpathentry kind="src" path="1042. Flower Planting With No Adjacent"/>
 	<classpathentry kind="src" path="133. Clone Graph"/>
+	<classpathentry kind="src" path="207. Course Schedule"/>
+	<classpathentry kind="src" path="210. Course Schedule II"/>
+	<classpathentry kind="src" path="261. Graph Valid Tree"/>
+	<classpathentry kind="src" path="310. Minimum Height Trees"/>
+	<classpathentry kind="src" path="323. Number of Connected Components in an Undirected Graph"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

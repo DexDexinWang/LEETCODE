@@ -31,23 +31,24 @@ public class Solution133 {
 		// TODO Auto-generated method stub
 
 	}
-	//BFS
-    //First choose a node to be expended. (Given)
-    //expend a node and generate new nodes which will be added to the queue.
-    //Termination rule: Que is empty. 
-    //The node can be expended only once. Map<Node,Node> visited
+    //BFS
+    //Choose a node to be expended: given node.
+    //for each expended node, make a copy node and add copy neighbors which will be added to copy node.
+    //Termination, all nodes visited
+    //For this BFS, I will use Queue to maintian it.
+    
     public Node cloneGraph(Node node) {
-        if(node == null) return null;
+        if (node == null) return node;
         Map<Node, Node> visited = new HashMap<>();
-        visited.put(node, new Node(node.val, new ArrayList<>()));
         Deque<Node> que = new LinkedList<>();
         que.offerLast(node);
+        visited.put(node, new Node(node.val, new ArrayList()));
+        
         while(!que.isEmpty()) {
-            Node target = que.pollFirst();
+            Node target = que.pollFirst();    
             for(Node nei: target.neighbors) {
-                if(!visited.containsKey(nei)){
-                    Node newNode = new Node(nei.val, new ArrayList<>());
-                    visited.put(nei, newNode);
+                if(!visited.containsKey(nei)) {
+                    visited.put(nei, new Node(nei.val, new ArrayList<>()));
                     que.offerLast(nei);
                 }
                 visited.get(target).neighbors.add(visited.get(nei));
@@ -56,15 +57,13 @@ public class Solution133 {
         return visited.get(node);
     }
     
-    
-  //DFS
-    //What does it store on each level? Create a Node, and connect previous neighbor.
-    //How many different status we will try to put on this level? neighbors
-    Map<Node,Node> visited = new HashMap<>();
+    //DFS 
+    //How many level? Could be N levels 
+    //How many status in each level? 1. node is null return. 2. node is exist in hashmap return the copy node. 3. otherwise, create new node, copy neibors in recursion to copy neighbors which will be added to new node.
+    Map<Node, Node> visited = new HashMap<>();
     public Node cloneGraph1(Node node) {
-        if(node == null) return null;
-        if(visited.containsKey(node)) return visited.get(node);
-        
+        if (node == null) return node;
+        if (visited.containsKey(node)) return visited.get(node);
         Node copyNode = new Node(node.val, new ArrayList<>());
         visited.put(node, copyNode);
         for(Node nei: node.neighbors) {

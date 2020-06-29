@@ -15,5 +15,4 @@ public class Solution997 {
         }
         return -1;
     }
-
 }
