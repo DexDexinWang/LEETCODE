@@ -11,5 +11,10 @@
 	<classpathentry kind="src" path="310. Minimum Height Trees"/>
 	<classpathentry kind="src" path="323. Number of Connected Components in an Undirected Graph"/>
 	<classpathentry kind="src" path="399. Evaluate Division"/>
+	<classpathentry kind="src" path="332. Reconstruct Itinerary"/>
+	<classpathentry kind="src" path="444. Sequence Reconstruction"/>
+	<classpathentry kind="src" path="743. Network Delay Time"/>
+	<classpathentry kind="src" path="841. Keys and Rooms"/>
+	<classpathentry kind="src" path="854. K-Similar Strings"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
