@@ -16,5 +16,7 @@
 	<classpathentry kind="src" path="743. Network Delay Time"/>
 	<classpathentry kind="src" path="841. Keys and Rooms"/>
 	<classpathentry kind="src" path="854. K-Similar Strings"/>
+	<classpathentry kind="src" path="1135. Connecting Cities With Minimum Cost"/>
+	<classpathentry kind="src" path="1387. Sort Integers by The Power Value"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
