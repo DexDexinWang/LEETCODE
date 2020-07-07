@@ -25,5 +25,6 @@
 	<classpathentry kind="src" path="1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance"/>
 	<classpathentry kind="src" path="1361. Validate Binary Tree Nodes"/>
 	<classpathentry kind="src" path="990. Satisfiability of Equality Equations"/>
+	<classpathentry kind="src" path="1162. As Far from Land as Possible"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

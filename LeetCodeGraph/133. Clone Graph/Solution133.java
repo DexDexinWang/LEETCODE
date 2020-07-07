@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+
 public class Solution133 {
 	
 	class Node {
@@ -35,14 +36,14 @@ public class Solution133 {
     //Choose a node to be expended: given node.
     //for each expended node, make a copy node and add copy neighbors which will be added to copy node.
     //Termination, all nodes visited
-    //For this BFS, I will use Queue to maintian it.
+    //For this BFS, I will use Queue to maintain it.
     
     public Node cloneGraph(Node node) {
         if (node == null) return node;
         Map<Node, Node> visited = new HashMap<>();
         Deque<Node> que = new LinkedList<>();
         que.offerLast(node);
-        visited.put(node, new Node(node.val, new ArrayList()));
+        visited.put(node, new Node(node.val, new ArrayList<>()));
         
         while(!que.isEmpty()) {
             Node target = que.pollFirst();    
