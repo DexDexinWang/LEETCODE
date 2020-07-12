@@ -17,5 +17,8 @@
 	<classpathentry kind="src" path="5248. Count Number of Nice Subarrays"/>
 	<classpathentry kind="src" path="5249. Minimum Remove to Make Valid Parentheses"/>
 	<classpathentry kind="src" path="5250. Check If It Is a Good Array"/>
+	<classpathentry kind="src" path="5461. Number of Substrings With Only 1s"/>
+	<classpathentry kind="src" path="5460. Number of Good Pairs"/>
+	<classpathentry kind="src" path="5211. Path with Maximum Probability"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

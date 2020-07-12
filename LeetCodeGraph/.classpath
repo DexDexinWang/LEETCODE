@@ -28,5 +28,6 @@
 	<classpathentry kind="src" path="1162. As Far from Land as Possible"/>
 	<classpathentry kind="src" path="802. Find Eventual Safe States"/>
 	<classpathentry kind="src" path="1102. Path With Maximum Minimum Value"/>
+	<classpathentry kind="src" path="1129. Shortest Path with Alternating Colors"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
