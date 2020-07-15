@@ -29,5 +29,7 @@
 	<classpathentry kind="src" path="802. Find Eventual Safe States"/>
 	<classpathentry kind="src" path="1102. Path With Maximum Minimum Value"/>
 	<classpathentry kind="src" path="1129. Shortest Path with Alternating Colors"/>
+	<classpathentry kind="src" path="959. Regions Cut By Slashes"/>
+	<classpathentry kind="src" path="684. Redundant Connection"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
