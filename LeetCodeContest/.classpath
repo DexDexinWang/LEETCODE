@@ -20,5 +20,7 @@
 	<classpathentry kind="src" path="5461. Number of Substrings With Only 1s"/>
 	<classpathentry kind="src" path="5460. Number of Good Pairs"/>
 	<classpathentry kind="src" path="5211. Path with Maximum Probability"/>
+	<classpathentry kind="src" path="5464. Water Bottles"/>
+	<classpathentry kind="src" path="5465. Number of Nodes in the Sub-Tree With the Same Label"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

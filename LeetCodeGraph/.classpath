@@ -31,5 +31,7 @@
 	<classpathentry kind="src" path="1129. Shortest Path with Alternating Colors"/>
 	<classpathentry kind="src" path="959. Regions Cut By Slashes"/>
 	<classpathentry kind="src" path="684. Redundant Connection"/>
+	<classpathentry kind="src" path="1136. Parallel Courses"/>
+	<classpathentry kind="src" path="1494. Parallel Courses II"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
