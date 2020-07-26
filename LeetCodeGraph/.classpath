@@ -33,5 +33,8 @@
 	<classpathentry kind="src" path="684. Redundant Connection"/>
 	<classpathentry kind="src" path="1136. Parallel Courses"/>
 	<classpathentry kind="src" path="1494. Parallel Courses II"/>
+	<classpathentry kind="src" path="269. Alien Dictionary"/>
+	<classpathentry kind="src" path="839. Similar String Groups"/>
+	<classpathentry kind="src" path="1153. String Transforms Into Another String"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

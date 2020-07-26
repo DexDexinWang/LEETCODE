@@ -22,5 +22,7 @@
 	<classpathentry kind="src" path="5211. Path with Maximum Probability"/>
 	<classpathentry kind="src" path="5464. Water Bottles"/>
 	<classpathentry kind="src" path="5465. Number of Nodes in the Sub-Tree With the Same Label"/>
+	<classpathentry kind="src" path="5472. Shuffle String"/>
+	<classpathentry kind="src" path="5473. Bulb Switcher IV"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
