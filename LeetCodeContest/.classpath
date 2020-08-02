@@ -23,6 +23,9 @@
 	<classpathentry kind="src" path="5464. Water Bottles"/>
 	<classpathentry kind="src" path="5465. Number of Nodes in the Sub-Tree With the Same Label"/>
 	<classpathentry kind="src" path="5472. Shuffle String"/>
-	<classpathentry kind="src" path="5473. Bulb Switcher IV"/>
+	<classpathentry kind="src" path="5475. Count Good Triplets"/>
+	<classpathentry kind="src" path="5476. Find the Winner of an Array Game"/>
+	<classpathentry kind="src" path="5477. Minimum Swaps to Arrange a Binary Grid"/>
+	<classpathentry kind="src" path="5478. Get the Maximum Score"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
