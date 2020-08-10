@@ -36,5 +36,9 @@
 	<classpathentry kind="src" path="269. Alien Dictionary"/>
 	<classpathentry kind="src" path="839. Similar String Groups"/>
 	<classpathentry kind="src" path="1153. String Transforms Into Another String"/>
+	<classpathentry kind="src" path="886. Possible Bipartition"/>
+	<classpathentry kind="src" path="996. Number of Squareful Arrays"/>
+	<classpathentry kind="src" path="1203. Sort Items by Groups Respecting Dependencies"/>
+	<classpathentry kind="src" path="1168. Optimize Water Distribution in a Village"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
