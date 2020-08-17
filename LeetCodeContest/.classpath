@@ -27,5 +27,6 @@
 	<classpathentry kind="src" path="5476. Find the Winner of an Array Game"/>
 	<classpathentry kind="src" path="5477. Minimum Swaps to Arrange a Binary Grid"/>
 	<classpathentry kind="src" path="5478. Get the Maximum Score"/>
+	<classpathentry kind="src" path="5490. Minimum Number of Days to Eat N Oranges"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
