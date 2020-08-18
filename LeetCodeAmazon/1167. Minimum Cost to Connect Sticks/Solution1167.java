@@ -7,7 +7,6 @@ public class Solution1167 {
 		// TODO Auto-generated method stub
 
 	}
-	
     //In order to save minimize the cost. 
     //Each time I could only combine the 2 minimum numbers untile there is only one number
     public int connectSticks(int[] sticks) {
@@ -26,7 +25,4 @@ public class Solution1167 {
         }
         return cost;
     }
-    //Time complexity: O(n + n*logn)  
-    //Space complexity: O(n)
-
 }

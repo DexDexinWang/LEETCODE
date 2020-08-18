@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="733. Flood Fill"/>
 	<classpathentry kind="src" path="937. Reorder Data in Log Files"/>
+	<classpathentry kind="src" path="21. Merge Two Sorted Lists"/>
+	<classpathentry kind="src" path="121. Best Time to Buy and Sell Stock"/>
+	<classpathentry kind="src" path="1. Two Sum"/>
+	<classpathentry kind="src" path="819. Most Common Word"/>
+	<classpathentry kind="src" path="572. Subtree of Another Tree"/>
+	<classpathentry kind="src" path="763. Partition Labels"/>
+	<classpathentry kind="src" path="973. K Closest Points to Origin"/>
+	<classpathentry kind="src" path="1268. Search Suggestions System"/>
 	<classpathentry kind="src" path="1167. Minimum Cost to Connect Sticks"/>
-	<classpathentry kind="src" path="AmazonOA 2019Optimal Utilization"/>
-	<classpathentry kind="src" path="AmazonOA2019Treasure Island"/>
-	<classpathentry kind="src" path="Amazon OA 2019 Treasure Island II"/>
-	<classpathentry kind="src" path="1192. Critical Connections in a Network"/>
-	<classpathentry kind="src" path="AmazonOA 2019Favorite Genres"/>
+	<classpathentry kind="src" path="694. Number of Distinct Islands"/>
+	<classpathentry kind="src" path="692. Top K Frequent Words"/>
+	<classpathentry kind="src" path="994. Rotting Oranges"/>
+	<classpathentry kind="src" path="17. Letter Combinations of a Phone Number"/>
+	<classpathentry kind="src" path="200. Number of Islands"/>
+	<classpathentry kind="src" path="1429. First Unique Number"/>
+	<classpathentry kind="src" path="348. Design Tic-Tac-Toe"/>
+	<classpathentry kind="src" path="380. Insert Delete GetRandom O(1)"/>
+	<classpathentry kind="src" path="863. All Nodes Distance K in Binary Tree"/>
+	<classpathentry kind="src" path="240. Search a 2D Matrix II"/>
+	<classpathentry kind="src" path="957. Prison Cells After N Days"/>
+	<classpathentry kind="src" path="139. Word Break"/>
+	<classpathentry kind="src" path="56. Merge Intervals"/>
+	<classpathentry kind="src" path="1091. Shortest Path in Binary Matrix"/>
+	<classpathentry kind="src" path="138. Copy List with Random Pointer"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="input"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

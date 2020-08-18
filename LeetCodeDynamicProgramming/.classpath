@@ -13,5 +13,6 @@
 	<classpathentry kind="src" path="53. Maximum Subarray"/>
 	<classpathentry kind="src" path="1143. Longest Common Subsequence"/>
 	<classpathentry kind="src" path="712. Minimum ASCII Delete Sum for Two Strings"/>
+	<classpathentry kind="src" path="1277. Count Square Submatrices with All Ones"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
