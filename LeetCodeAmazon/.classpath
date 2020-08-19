@@ -26,6 +26,16 @@
 	<classpathentry kind="src" path="56. Merge Intervals"/>
 	<classpathentry kind="src" path="1091. Shortest Path in Binary Matrix"/>
 	<classpathentry kind="src" path="138. Copy List with Random Pointer"/>
+	<classpathentry kind="src" path="2. Add Two Numbers"/>
+	<classpathentry kind="src" path="42. Trapping Rain Water"/>
+	<classpathentry kind="src" path="15. 3Sum"/>
+	<classpathentry kind="src" path="5. Longest Palindromic Substring"/>
+	<classpathentry kind="src" path="127. Word Ladder"/>
+	<classpathentry kind="src" path="253. Meeting Rooms II"/>
+	<classpathentry kind="src" path="210. Course Schedule II"/>
+	<classpathentry kind="src" path="146. LRU Cache"/>
+	<classpathentry kind="src" path="269. Alien Dictionary"/>
+	<classpathentry kind="src" path="353. Design Snake Game"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="input"/>
 	<classpathentry kind="output" path="bin"/>
