@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="DynamicProgramming"/>
 	<classpathentry kind="src" path="SlidingWindow"/>
+	<classpathentry kind="src" path="TwoPointers"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
