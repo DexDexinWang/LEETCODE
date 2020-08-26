@@ -10,24 +10,33 @@ public class Quadruple {
 		// TODO Auto-generated method stub
 		System.out.println(searchQuadruplets(new int[] {2, 0, -1, 1, -2, 2}, 1));
 	}
-	public static List<List<Integer>> searchQuadruplets(int[] arr, int target) {
-	    Arrays.sort(arr);
-	    List<List<Integer>> quadruplets = new ArrayList<>();
-	    int len = arr.length;
-	    for(int i = 0; i < len - 2; i++) {
-	      if(i > 0 && arr[i-1] == arr[i]) continue;
-	      for(int j = i + 1; j < len - 1; j++) {
-	        if(arr[j-1] == arr[j]) continue;
-	        Map<Integer, Integer> map = new HashMap<>();
-	        for(int k = j + 1; k < len; k++) {
-	          if(arr[k-1] == arr[k]) continue;
-	          if(map.containsKey(arr[k])) {
-	            quadruplets.add(Arrays.asList(new Integer[]{arr[i], arr[j], arr[k], arr[map.get(arr[k])]}));
-	          }
-	          map.put(target - arr[i] - arr[j] - arr[k], k);
-	        }
-	      } 
-	    }
-	    return quadruplets;
-	  }
+	  public static List<List<Integer>> searchQuadruplets(int[] arr, int target) {
+		  Arrays.parallelSort(arr);
+		    List<List<Integer>> quadruplets = new ArrayList<>();
+		    int len = arr.length;
+		    for(int i = 0; i < len - 3; i++) {
+		      if(i>0 && arr[i-1] == arr[i]) continue;
+		      for(int j = i + 1; j < len - 2; j++) {
+		        if(arr[j] == arr[j-1]) continue;
+		        int left = j + 1;
+		        int right = len - 1;
+		        
+		        while (left < right) {
+		          int sum = arr[i] + arr[j] + arr[left] + arr[right];
+		          if(sum == target) {
+		            quadruplets.add(Arrays.asList(arr[i], arr[j], arr[left], arr[right]));
+		            left++;
+		            right--;
+		            while(left < right  && arr[left -1] == arr[left]) left++;
+		            while(left < right  && arr[right + 1] == arr[right]) right--;
+		          } else if (sum < target) {
+		            left++;
+		          } else {
+		            right--;
+		          }
+		        }
+		      }
+		    }
+		    return quadruplets;
+		  }
 }
