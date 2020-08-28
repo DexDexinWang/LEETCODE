@@ -1,5 +1,5 @@
 
-public class Main {
+public class FactoryPatternMain {
 
 	public interface Shape {
 		void draw();
@@ -63,7 +63,6 @@ public class Main {
 		2.	More clean especially when we have complicated instance creation logic
 		3.	Easier to extend the instance creation logic (extend the factory only)
 		4.	Provide chances to have different object allocation strategies. (e.g., what if we want to reuse shape objects)
-
 	 * */
 	
 	public static void main(String[] args) {

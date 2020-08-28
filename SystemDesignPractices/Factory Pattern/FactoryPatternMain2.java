@@ -1,6 +1,6 @@
 import java.awt.Button;
 
-public class Main2 {
+public class FactoryPatternMain2 {
 
 	public interface GUIFactory{
 		public Button createButton();
