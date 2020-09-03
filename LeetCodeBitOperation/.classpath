@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="1342. Number of Steps to Reduce a Number to Zero"/>
+	<classpathentry kind="src" path="1486. XOR Operation in an Array"/>
+	<classpathentry kind="src" path="1290. Convert Binary Number in a Linked List to Integer"/>
+	<classpathentry kind="src" path="461. Hamming Distance"/>
+	<classpathentry kind="src" path="1356. Sort Integers by The Number of 1 Bits"/>
+	<classpathentry kind="src" path="136. Single Number"/>
+	<classpathentry kind="src" path="476. Number Complement"/>
+	<classpathentry kind="src" path="693. Binary Number with Alternating Bits"/>
+	<classpathentry kind="src" path="169. Majority Element"/>
+	<classpathentry kind="src" path="389. Find the Difference"/>
+	<classpathentry kind="src" path="268. Missing Number"/>
+	<classpathentry kind="src" path="191. Number of 1 Bits"/>
+	<classpathentry kind="src" path="405. Convert a Number to Hexadecimal"/>
+	<classpathentry kind="src" path="231. Power of Two"/>
+	<classpathentry kind="src" path="762. Prime Number of Set Bits in Binary Representation"/>
+	<classpathentry kind="src" path="401. Binary Watch"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
