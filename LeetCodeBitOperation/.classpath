@@ -18,5 +18,11 @@
 	<classpathentry kind="src" path="231. Power of Two"/>
 	<classpathentry kind="src" path="762. Prime Number of Set Bits in Binary Representation"/>
 	<classpathentry kind="src" path="401. Binary Watch"/>
+	<classpathentry kind="src" path="190. Reverse Bits"/>
+	<classpathentry kind="src" path="1442. Count Triplets That Can Form Two Arrays of Equal XOR"/>
+	<classpathentry kind="src" path="338. Counting Bits"/>
+	<classpathentry kind="src" path="1310. XOR Queries of a Subarray"/>
+	<classpathentry kind="src" path="318. Maximum Product of Word Lengths"/>
+	<classpathentry kind="src" path="421. Maximum XOR of Two Numbers in an Array"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
