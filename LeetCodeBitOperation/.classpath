@@ -24,5 +24,11 @@
 	<classpathentry kind="src" path="1310. XOR Queries of a Subarray"/>
 	<classpathentry kind="src" path="318. Maximum Product of Word Lengths"/>
 	<classpathentry kind="src" path="421. Maximum XOR of Two Numbers in an Array"/>
+	<classpathentry kind="src" path="1457. Pseudo-Palindromic Paths in a Binary Tree"/>
+	<classpathentry kind="src" path="137. Single Number II"/>
+	<classpathentry kind="src" path="260. Single Number III"/>
+	<classpathentry kind="src" path="1525. Number of Good Ways to Split a String"/>
+	<classpathentry kind="src" path="784. Letter Case Permutation"/>
+	<classpathentry kind="src" path="1404. Number of Steps to Reduce a Number in Binary Representation to One"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
