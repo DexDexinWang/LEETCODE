@@ -6,5 +6,7 @@
 	<classpathentry kind="src" path="SlidingWindow"/>
 	<classpathentry kind="src" path="TwoPointers"/>
 	<classpathentry kind="src" path="LinkedList"/>
+	<classpathentry kind="src" path="SlowFastPointers"/>
+	<classpathentry kind="src" path="Merge Intervals"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

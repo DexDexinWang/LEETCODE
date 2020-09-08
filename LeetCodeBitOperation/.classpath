@@ -30,5 +30,6 @@
 	<classpathentry kind="src" path="1525. Number of Good Ways to Split a String"/>
 	<classpathentry kind="src" path="784. Letter Case Permutation"/>
 	<classpathentry kind="src" path="1404. Number of Steps to Reduce a Number in Binary Representation to One"/>
+	<classpathentry kind="src" path="187. Repeated DNA Sequences"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
