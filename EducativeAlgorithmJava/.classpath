@@ -8,5 +8,7 @@
 	<classpathentry kind="src" path="LinkedList"/>
 	<classpathentry kind="src" path="SlowFastPointers"/>
 	<classpathentry kind="src" path="Merge Intervals"/>
+	<classpathentry kind="src" path="Cyclic Sort"/>
+	<classpathentry kind="src" path="BinaryTree"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
