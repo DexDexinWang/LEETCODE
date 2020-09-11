@@ -10,5 +10,8 @@
 	<classpathentry kind="src" path="Merge Intervals"/>
 	<classpathentry kind="src" path="Cyclic Sort"/>
 	<classpathentry kind="src" path="BinaryTree"/>
+	<classpathentry kind="src" path="BitWise"/>
+	<classpathentry kind="src" path="Binary Search"/>
+	<classpathentry kind="src" path="Two Heaps"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
