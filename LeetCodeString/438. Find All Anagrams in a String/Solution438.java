@@ -39,6 +39,7 @@ The substring with start index = 2 is "ab", which is an anagram of "ab".
  */
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -53,7 +54,43 @@ public class Solution438 {
 		}
 	}
 	
-    public static List<Integer> findAnagrams(String s, String p) 
+	public static List<Integer> findAnagrams(String s, String p) {
+        List<Integer> res = new LinkedList<>();
+        int[] count = new int[26];
+        for(char c: p.toCharArray()) {
+            count[c-'a']++;
+        }
+        int total = 0;
+        for(int i = 0; i < 26; i++) {
+            if(count[i]!= 0) total++;
+        }
+        int swLen = p.length();
+        int left = 0;
+        int right = 0;
+        while(right < s.length()) {
+            char rightChar = s.charAt(right);
+            count[rightChar-'a']--;
+            if(count[rightChar - 'a'] == 0) {
+                total--;
+            }
+            
+            if(right - left + 1 == swLen) {
+                if (total == 0) {
+                    res.add(left);
+                }
+                char leftChar = s.charAt(left);
+                count[leftChar - 'a']++;
+                if(count[leftChar - 'a']==1) {
+                    total++;
+                }
+                left++;
+            }
+            right ++;
+        }
+        return res;
+    }
+	
+    public static List<Integer> findAnagrams1(String s, String p) 
     {
     	List<Integer> list = new ArrayList<Integer>();
     	if(s==null || s.length()==0 || p==null || p.length()==0) return list;
