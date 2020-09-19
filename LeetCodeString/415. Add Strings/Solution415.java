@@ -55,6 +55,21 @@ public class Solution415 {
     	return new String(result);
     }
     
-    
+    public String addStrings2(String num1, String num2) {
+        if(num1 == null || num1.length() == 0) return num2;
+        if(num2 == null || num2.length() == 0) return num1;
+        int i = num1.length() - 1;
+        int j = num2.length() - 1;
+        int carrier = 0;
+        StringBuilder sb = new StringBuilder();
+        while(i >= 0 || j >= 0 || carrier != 0) {
+            int v1 = i >= 0 ? num1.charAt(i--) - '0': 0;
+            int v2 = j >= 0 ? num2.charAt(j--) - '0': 0;
+            int sum = v1 + v2 + carrier;
+            sb.insert(0,sum % 10 + "");
+            carrier = sum / 10;
+        }
+        return sb.toString();
+    }
 
 }

@@ -45,6 +45,8 @@
 	<classpathentry kind="src" path="49. Group Anagrams"/>
 	<classpathentry kind="src" path="12. Integer to Roman"/>
 	<classpathentry kind="src" path="273. Integer to English Words"/>
+	<classpathentry kind="src" path="953. Verifying an Alien Dictionary"/>
+	<classpathentry kind="src" path="43. Multiply Strings"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="434. Number of Segments in a String"/>
 	<classpathentry kind="output" path="bin"/>
