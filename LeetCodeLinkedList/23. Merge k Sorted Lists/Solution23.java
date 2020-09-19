@@ -44,5 +44,32 @@ public class Solution23 {
 	        }
 	        return dummy.next;
 	    }
+	 
+	    public ListNode mergeKLists1(ListNode[] lists) {
+	        ListNode dummy = new ListNode(-1);
+	        ListNode temp = dummy;
+	        boolean flag = true;
+	        
+	        while(flag) {
+	            flag = false;
+	            int minValue = Integer.MAX_VALUE;
+	            int index = -1;
+	            for(int i = 0; i < lists.length; i++) {
+	                ListNode node = lists[i];
+	                if(node!= null && node.val < minValue) {
+	                    index = i;
+	                    minValue = node.val;
+	            
+	                }
+	            }
+	            if(index != -1) {
+	                flag = true;
+	                temp.next = lists[index];
+	                temp = temp.next;
+	                lists[index] = lists[index].next;
+	            }
+	        }
+	        return dummy.next;
+	    }
 
 }
