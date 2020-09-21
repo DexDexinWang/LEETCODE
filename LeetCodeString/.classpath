@@ -49,6 +49,8 @@
 	<classpathentry kind="src" path="43. Multiply Strings"/>
 	<classpathentry kind="src" path="166. Fraction to Recurring Decimal"/>
 	<classpathentry kind="src" path="680. Valid Palindrome II"/>
+	<classpathentry kind="src" path="301. Remove Invalid Parentheses"/>
+	<classpathentry kind="src" path="91. Decode Ways"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="434. Number of Segments in a String"/>
 	<classpathentry kind="output" path="bin"/>
