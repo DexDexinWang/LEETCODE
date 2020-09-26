@@ -103,5 +103,7 @@
 	<classpathentry kind="src" path="969. Pancake Sorting"/>
 	<classpathentry kind="src" path="249. Group Shifted Strings"/>
 	<classpathentry kind="src" path="215. Kth Largest Element in an Array"/>
+	<classpathentry kind="src" path="986. Interval List Intersections"/>
+	<classpathentry kind="src" path="621. Task Scheduler"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
