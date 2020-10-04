@@ -20,6 +20,7 @@
 	<classpathentry kind="src" path="398. Random Pick Index"/>
 	<classpathentry kind="src" path="1265. Print Immutable Linked List in Reverse"/>
 	<classpathentry kind="src" path="1570. Dot Product of Two Sparse Vectors"/>
+	<classpathentry kind="src" path="339. Nested List Weight Sum"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="535. Encode and Decode TinyURL"/>
 	<classpathentry kind="src" path="input"/>

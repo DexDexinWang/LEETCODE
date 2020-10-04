@@ -7,5 +7,6 @@
 	<classpathentry kind="src" path="Factory Pattern"/>
 	<classpathentry kind="src" path="Singleton Pattern"/>
 	<classpathentry kind="src" path="BlackJack"/>
+	<classpathentry kind="src" path="MultiThreads"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
