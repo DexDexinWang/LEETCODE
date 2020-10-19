@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="Singleton Pattern"/>
 	<classpathentry kind="src" path="BlackJack"/>
 	<classpathentry kind="src" path="MultiThreads"/>
+	<classpathentry kind="src" path="HashValues"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
