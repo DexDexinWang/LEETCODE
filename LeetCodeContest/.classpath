@@ -28,5 +28,9 @@
 	<classpathentry kind="src" path="5477. Minimum Swaps to Arrange a Binary Grid"/>
 	<classpathentry kind="src" path="5478. Get the Maximum Score"/>
 	<classpathentry kind="src" path="5490. Minimum Number of Days to Eat N Oranges"/>
+	<classpathentry kind="src" path="5547. Arithmetic Subarrays"/>
+	<classpathentry kind="src" path="5546. Slowest Key"/>
+	<classpathentry kind="src" path="5548. Path With Minimum Effort"/>
+	<classpathentry kind="src" path="5156. Rank Transform of a Matrix"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
