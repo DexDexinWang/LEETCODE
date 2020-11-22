@@ -32,5 +32,19 @@
 	<classpathentry kind="src" path="5546. Slowest Key"/>
 	<classpathentry kind="src" path="5548. Path With Minimum Effort"/>
 	<classpathentry kind="src" path="5156. Rank Transform of a Matrix"/>
+	<classpathentry kind="src" path="5554. Check Array Formation Through Concatenation"/>
+	<classpathentry kind="src" path="5555. Count Sorted Vowel Strings"/>
+	<classpathentry kind="src" path="5556. Furthest Building You Can Reach"/>
+	<classpathentry kind="src" path="5600. Kth Smallest Instructions"/>
+	<classpathentry kind="src" path="5561. Get Maximum in Generated Array"/>
+	<classpathentry kind="src" path="5562. Minimum Deletions to Make Character Frequencies Unique"/>
+	<classpathentry kind="src" path="5563. Sell Diminishing-Valued Colored Balls"/>
+	<classpathentry kind="src" path="5601. Design an Ordered Stream"/>
+	<classpathentry kind="src" path="5603. Determine if Two Strings Are Close"/>
+	<classpathentry kind="src" path="5602. Minimum Operations to Reduce X to Zero"/>
+	<classpathentry kind="src" path="5605. Check If Two String Arrays are Equivalent"/>
+	<classpathentry kind="src" path="5606. Smallest String With A Given Numeric Value"/>
+	<classpathentry kind="src" path="5607. Ways to Make a Fair Array"/>
+	<classpathentry kind="src" path="5608. Minimum Initial Energy to Finish Tasks"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
