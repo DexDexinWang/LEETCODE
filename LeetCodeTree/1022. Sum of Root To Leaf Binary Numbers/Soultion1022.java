@@ -16,16 +16,11 @@ public class Soultion1022 {
         return globalSum;
     }
     
-    private void traverseTree(TreeNode root, List<Integer> list) {
-        if(root.left == null && root.right == null) {
-            list.add(root.val);
-            globalSum+= calculateBitValues(list);
-            list.remove(list.size()-1);
-        }
-        list.add(root.val);
-        if(root.left != null) traverseTree(root.left, list);
-        if(root.right != null) traverseTree(root.right, list);
-        list.remove(list.size() - 1);
+    //Solution2
+    public int sumRootToLeaf2(TreeNode root) {
+    	int sum = 0;
+        traverseTree2(root,sum);
+        return globalSum;
     }
     
     private int calculateBitValues(List<Integer> list) {
@@ -38,11 +33,16 @@ public class Soultion1022 {
         return num;
     }
     
-    //Solution2
-    public int sumRootToLeaf2(TreeNode root) {
-    	int sum = 0;
-        traverseTree2(root,sum);
-        return globalSum;
+    private void traverseTree(TreeNode root, List<Integer> list) {
+        if(root.left == null && root.right == null) {
+            list.add(root.val);
+            globalSum+= calculateBitValues(list);
+            list.remove(list.size()-1);
+        }
+        list.add(root.val);
+        if(root.left != null) traverseTree(root.left, list);
+        if(root.right != null) traverseTree(root.right, list);
+        list.remove(list.size() - 1);
     }
     
     private void traverseTree2(TreeNode root, int sum) {

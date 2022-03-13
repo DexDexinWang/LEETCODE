@@ -29,7 +29,14 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution257 {
-	public static void main(String[] args) 
+	public static List<String> binaryTreePaths(TreeNode root) 
+    {
+    	List<String> result = new ArrayList<String>();
+    	if(root!=null)  path(root, "",result);
+    	return result;
+    }
+	
+    public static void main(String[] args) 
 	{
 		TreeNode input = TreeRandom.treeGenRange(3, null, 0, 20);
 		input.print();
@@ -37,13 +44,6 @@ public class Solution257 {
 		List<String> output = binaryTreePaths(input);
 		System.out.println(Arrays.toString(output.toArray()));
 	}
-	
-    public static List<String> binaryTreePaths(TreeNode root) 
-    {
-    	List<String> result = new ArrayList<String>();
-    	if(root!=null)  path(root, "",result);
-    	return result;
-    }
     
     private static void path(TreeNode root, String path, List<String> result)
     {

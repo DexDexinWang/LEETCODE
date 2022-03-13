@@ -14,18 +14,7 @@ import generator.TreeRandom;
 import generator.TreeNode;
 
 public class Solution100 {
-	public static void main(String[] args) 
-	{
-		TreeNode input1 = TreeRandom.treeGen(3, null);
-		input1.print();
-		System.out.println();
-		TreeNode input2 = TreeRandom.treeGen(3, null);
-		input2.print();
-		System.out.println();
-		System.out.println(isSameTree(input1,input2));
-	}
-	
-    public static boolean isSameTree(TreeNode p, TreeNode q) 
+	public static boolean isSameTree(TreeNode p, TreeNode q) 
     {
     	if(p==null && q== null) return true;
     	if(p==null || q== null) return false;
@@ -35,5 +24,16 @@ public class Solution100 {
     	}
     	return false;
     }
+	
+    public static void main(String[] args) 
+	{
+		TreeNode input1 = TreeRandom.treeGen(3, null);
+		input1.print();
+		System.out.println();
+		TreeNode input2 = TreeRandom.treeGen(3, null);
+		input2.print();
+		System.out.println();
+		System.out.println(isSameTree(input1,input2));
+	}
 
 }

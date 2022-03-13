@@ -2,6 +2,18 @@ import generator.TreeNode;
 
 public class Solution742 {
 
+	class Res{
+        boolean findTarget;
+        int nearestLeaf;
+        int nearestPath;
+        int targetLevel;
+        public Res(int nl, int np, boolean f, int t) {
+            nearestLeaf = nl;
+            nearestPath = np;
+            findTarget = f;
+            targetLevel = t;
+        }
+    }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		TreeNode root = new TreeNode(1);
@@ -15,19 +27,27 @@ public class Solution742 {
 		root.right.left.left.right = new TreeNode(9);
 		root.right.right.right.left = new TreeNode(10);
 		System.out.print(new Solution742().findClosestLeaf(root, 3));
-	}
-	//Post Order
+	} 
+    private int nearestNum;
+    //Post Order
     //Left and Right: expeting the nearest leaf, leaf level, whether found the target, and target level. 
     //Current: if a leaf and found target, check whether the leaf is the nearest leaf. Otherwise, If found leave calculate the path from node to target. Otherwise, return the nearest leaf in current tree. 
     //Rturn: nearest leaf, leaf level, whether found the target, and target level.
-	private int nearestPath; 
-    private int nearestNum;
+	private int nearestPath;
+    
     public int findClosestLeaf(TreeNode root, int k) {
         nearestPath = Integer.MAX_VALUE;
         nearestNum = Integer.MAX_VALUE;
         if(root== null) return 0;
     	count(root, 1, k, false, 0);
     	return nearestNum;
+    }
+    
+    private void compareMin(int path, int num) {
+        if(path < nearestPath) {
+            nearestPath = path;
+            nearestNum = num;
+        }
     }
     
     private Res count(TreeNode root, int level, int k, boolean foundK, int kLevel) {
@@ -60,26 +80,6 @@ public class Solution742 {
             return new Res(left.nearestLeaf, left.nearestPath, foundK, kLevel);
         } else {
             return new Res(right.nearestLeaf, right.nearestPath, foundK, kLevel);
-        }
-    }
-    
-    private void compareMin(int path, int num) {
-        if(path < nearestPath) {
-            nearestPath = path;
-            nearestNum = num;
-        }
-    }
-    
-    class Res{
-        int nearestLeaf;
-        int nearestPath;
-        boolean findTarget;
-        int targetLevel;
-        public Res(int nl, int np, boolean f, int t) {
-            nearestLeaf = nl;
-            nearestPath = np;
-            findTarget = f;
-            targetLevel = t;
         }
     }
 }

@@ -5,7 +5,17 @@ import generator.TreeNode;
 
 public class Solution662 {
 
-	public static void main(String[] args) {
+	class CalNode{
+        int depth, pos;
+        TreeNode node;
+        CalNode(TreeNode n, int d, int p) {
+            this.node = n;
+            this.depth = d;
+            this.pos = p;
+        }
+    }
+	
+    public static void main(String[] args) {
 		TreeNode root= new TreeNode(1);
 		root.left = new TreeNode(3);
 		root.right = new TreeNode(2);
@@ -14,7 +24,7 @@ public class Solution662 {
 		root.right.right = new TreeNode(9);
 		new Solution662().widthOfBinaryTree1(root);
 	}
-	
+    
     public int widthOfBinaryTree(TreeNode root) {
         if (root == null) return 0;
         Deque<CalNode> queue = new LinkedList<>();
@@ -34,16 +44,6 @@ public class Solution662 {
             
         }
         return ans;
-    }
-    
-    class CalNode{
-        TreeNode node;
-        int depth, pos;
-        CalNode(TreeNode n, int d, int p) {
-            this.node = n;
-            this.depth = d;
-            this.pos = p;
-        }
     }
 	
     public int widthOfBinaryTree1(TreeNode root) {

@@ -2,10 +2,10 @@
 public class Solution117 {
 
 	class Node {
-	    public int val;
 	    public Node left;
-	    public Node right;
 	    public Node next;
+	    public Node right;
+	    public int val;
 
 	    public Node() {}
 	    

@@ -17,15 +17,15 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution110 {
-	public static void main(String[] args) 
+	public static boolean isBalanced(TreeNode root) 
+    {
+    	return height(root)!=-1;  
+    }
+    public static void main(String[] args) 
 	{
 		TreeNode root = TreeRandom.treeGen(3, null);
 		System.out.println(isBalanced(root));
 	}
-    public static boolean isBalanced(TreeNode root) 
-    {
-    	return height(root)!=-1;  
-    }
     private static int height(TreeNode node)
     {
     	if(node==null) return 0;

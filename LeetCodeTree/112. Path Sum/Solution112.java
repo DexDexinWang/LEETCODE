@@ -25,11 +25,6 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution112 {
-	public static void main(String[] args) 
-	{
-		TreeNode input = TreeRandom.treeGen(5, null);
-		System.out.println(hasPathSum(input,20));
-	}
 	//In order
     //left and right : expect checking result in subtrees
     //current: if root is leave, it should check total sum is target or not 
@@ -40,4 +35,9 @@ public class Solution112 {
         if(root.left==null && root.right==null && sum-root.val==0) return true;
         return hasPathSum(root.left,sum-root.val) || hasPathSum(root.right,sum-root.val);
     }
+	public static void main(String[] args) 
+	{
+		TreeNode input = TreeRandom.treeGen(5, null);
+		System.out.println(hasPathSum(input,20));
+	}
 }

@@ -26,18 +26,18 @@ import generator.TreeNode;
 public class Solution543 
 {
 	static int max =0;
-	public static void main(String[] args) 
+	public static int diameterOfBinaryTree(TreeNode root) 
+    {
+    	maxDepth(root);
+    	return max;
+    }
+	
+    public static void main(String[] args) 
 	{
 		TreeNode input = TreeRandom.treeGen(3, null);
 		input.print();
 		System.out.println(diameterOfBinaryTree(input));
 	}
-	
-    public static int diameterOfBinaryTree(TreeNode root) 
-    {
-    	maxDepth(root);
-    	return max;
-    }
     
     private static int maxDepth(TreeNode root)
     {

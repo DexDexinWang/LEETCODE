@@ -10,17 +10,19 @@ public class Solution144 {
 		// TODO Auto-generated method stub
 
 	}
+	
+	// Java Doc https://docs.oracle.com/javase/7/docs/api/java/util/Deque.html
     public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> res = new LinkedList<>();
-        if(root == null) return res;
+        List<Integer> listResult = new LinkedList<>();
+        if(root == null) return listResult;
         Deque<TreeNode> stack = new LinkedList<>();
-        stack.offerLast(root);
+        stack.addFirst(root);
         while(!stack.isEmpty()) {
-            TreeNode node = stack.pollLast();
-            res.add(node.val);
-            if (node.right != null) stack.offerLast(node.right);
-            if (node.left != null) stack.offerLast(node.left);
+            TreeNode temp = stack.removeFirst();
+            listResult.add(temp.val);
+            if(temp.right != null) stack.addFirst(temp.right);
+            if(temp.left != null) stack.addFirst(temp.left);
         }
-        return res;
+        return listResult;
     }
 }

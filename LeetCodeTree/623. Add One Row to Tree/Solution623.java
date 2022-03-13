@@ -59,13 +59,7 @@ import generator.TreeRandom;
 import generator.TreeNode;
 
 public class Solution623 {
-	public static void main(String[] args) {
-		TreeNode input = TreeRandom.treeGen(3, null);
-		TreeNode output = addOneRow(input,2,2);
-		output.print();
-	}
-	
-    public static TreeNode addOneRow(TreeNode root, int v, int d) 
+	public static TreeNode addOneRow(TreeNode root, int v, int d) 
     {
     	if(d==1 || d==0)
     	{
@@ -81,6 +75,12 @@ public class Solution623 {
     	}
     	return root;
     }
+	
+    public static void main(String[] args) {
+		TreeNode input = TreeRandom.treeGen(3, null);
+		TreeNode output = addOneRow(input,2,2);
+		output.print();
+	}
 
     
     /*

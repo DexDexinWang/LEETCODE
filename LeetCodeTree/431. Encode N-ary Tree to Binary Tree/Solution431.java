@@ -27,6 +27,36 @@ public class Solution431 {
 		Node root2 = new Solution431().decode(root1);
 		System.out.print(root2.val);
 	}
+    // Decodes your binary tree to an n-ary tree.
+    public Node decode(TreeNode root) {
+        if (root == null) return null;
+        Deque<TreeNode> que1 = new LinkedList<>();
+        Deque<Node> que2 = new LinkedList<>();
+        que1.offerLast(root);
+        Node node = new Node(root.val, new LinkedList<>());
+        que2.offerLast(node);
+        while (!que1.isEmpty()) {
+        	TreeNode temp1 = que1.pollFirst();
+        	Node temp2 = que2.pollFirst();
+        	if(temp1.left!= null) {
+        		temp1 = temp1.left;
+        		que1.offerLast(temp1);
+        		Node newNode = new Node(temp1.val, new LinkedList<>());
+        		temp2.children = new LinkedList<>();
+        		temp2.children.add(newNode);
+        		que2.offerLast(newNode);
+        		while(temp1.right!= null) {
+        			temp1 = temp1.right;
+        			que1.offerLast(temp1);
+        			newNode = new Node(temp1.val,new LinkedList<>());
+        			temp2.children.add(newNode);
+            		que2.offerLast(newNode);
+        		}
+        	}
+        }
+        return node;
+    }
+	
     // Encodes an n-ary tree to a binary tree.
     public TreeNode encode(Node root) {
         if(root == null) return null;
@@ -58,35 +88,5 @@ public class Solution431 {
             }
         }
         return tree;
-    }
-	
-    // Decodes your binary tree to an n-ary tree.
-    public Node decode(TreeNode root) {
-        if (root == null) return null;
-        Deque<TreeNode> que1 = new LinkedList<>();
-        Deque<Node> que2 = new LinkedList<>();
-        que1.offerLast(root);
-        Node node = new Node(root.val, new LinkedList<>());
-        que2.offerLast(node);
-        while (!que1.isEmpty()) {
-        	TreeNode temp1 = que1.pollFirst();
-        	Node temp2 = que2.pollFirst();
-        	if(temp1.left!= null) {
-        		temp1 = temp1.left;
-        		que1.offerLast(temp1);
-        		Node newNode = new Node(temp1.val, new LinkedList<>());
-        		temp2.children = new LinkedList<>();
-        		temp2.children.add(newNode);
-        		que2.offerLast(newNode);
-        		while(temp1.right!= null) {
-        			temp1 = temp1.right;
-        			que1.offerLast(temp1);
-        			newNode = new Node(temp1.val,new LinkedList<>());
-        			temp2.children.add(newNode);
-            		que2.offerLast(newNode);
-        		}
-        	}
-        }
-        return node;
     }
 }

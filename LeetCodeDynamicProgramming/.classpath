@@ -14,5 +14,8 @@
 	<classpathentry kind="src" path="1143. Longest Common Subsequence"/>
 	<classpathentry kind="src" path="712. Minimum ASCII Delete Sum for Two Strings"/>
 	<classpathentry kind="src" path="1277. Count Square Submatrices with All Ones"/>
+	<classpathentry kind="src" path="62. Unique Paths"/>
+	<classpathentry kind="src" path="509. Fibonacci Number"/>
+	<classpathentry kind="src" path="1137. N-th Tribonacci Number"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

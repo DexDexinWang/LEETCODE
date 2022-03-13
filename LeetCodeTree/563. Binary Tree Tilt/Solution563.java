@@ -19,18 +19,18 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution563 {
-	public static void main(String[] args) 
+	static int result=0;
+	public static int findTilt(TreeNode root) 
+    {
+       sum(root);
+       return result;
+    }
+    public static void main(String[] args) 
 	{
 		TreeNode input =TreeRandom.treeGenRange(3, null,1,10);
 		input.print();
 		System.out.println("\n"+findTilt(input));
 	}
-	static int result=0;
-    public static int findTilt(TreeNode root) 
-    {
-       sum(root);
-       return result;
-    }
     
     private static int sum(TreeNode root)
     {

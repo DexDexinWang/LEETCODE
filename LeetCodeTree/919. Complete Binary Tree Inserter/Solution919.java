@@ -40,6 +40,10 @@ public class Solution919 {
         
     }
     
+    public TreeNode get_root() {
+        return root;
+    }
+    
     public int insert(int v) {
         TreeNode insert = new TreeNode(v);
         TreeNode root = que.peekFirst();
@@ -51,9 +55,5 @@ public class Solution919 {
         }
         que.offerLast(insert);
         return root.val;
-    }
-    
-    public TreeNode get_root() {
-        return root;
     }
 }

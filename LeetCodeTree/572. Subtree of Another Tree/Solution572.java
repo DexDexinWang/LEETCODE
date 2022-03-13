@@ -20,16 +20,16 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution572 {
-	public static void main(String[] args) {
+	public static boolean isSubtree(TreeNode s, TreeNode t) 
+    {
+    	return transfer(s).contains(transfer(t));
+    }
+    public static void main(String[] args) {
 		TreeNode input1 = TreeRandom.treeGen(5, null);
 		TreeNode input2 = input1;
 		System.out.println(isSubtree(input1,input2));
 		
 	}
-    public static boolean isSubtree(TreeNode s, TreeNode t) 
-    {
-    	return transfer(s).contains(transfer(t));
-    }
     private static String transfer(TreeNode root)
     {
     	StringBuilder sb = new StringBuilder();

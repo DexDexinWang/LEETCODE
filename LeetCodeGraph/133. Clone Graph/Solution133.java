@@ -58,6 +58,27 @@ public class Solution133 {
         return visited.get(node);
     }
     
+    public Node cloneGraph3(Node node) {
+        if (node == null) {
+            return null;
+        }
+        Deque<Node> queue = new LinkedList<>();
+        Map<Node,Node> visited = new HashMap<>();
+        queue.offer(node);
+        visited.put(node, new Node(node.val, new ArrayList<>()));
+        while(queue.isEmpty()) {
+            Node currentNode = queue.pollFirst();
+            for(Node neighbor : currentNode.neighbors) {
+                if(!visited.containsKey(neighbor)) {
+                    visited.put(neighbor, new Node(neighbor.val, new ArrayList<>()));
+                    queue.offer(neighbor);
+                }
+                visited.get(currentNode).neighbors.add(visited.get(neighbor));
+            }
+        }
+        return visited.get(node);
+    }
+    
     //DFS 
     //How many level? Could be N levels 
     //How many status in each level? 1. node is null return. 2. node is exist in hashmap return the copy node. 3. otherwise, create new node, copy neibors in recursion to copy neighbors which will be added to new node.
@@ -71,5 +92,25 @@ public class Solution133 {
             copyNode.neighbors.add(cloneGraph(nei));
         }
         return copyNode;
+    }
+    
+    public Node cloneGraph4(Node node) {
+        if (node == null) return node;
+        Map<Node, Node> visited = new HashMap<>();
+        visited.put(node, new Node(node.val, new ArrayList<>()));
+        Deque<Node> queue = new LinkedList<>();
+        queue.offerLast(node);
+        while(!queue.isEmpty()) {
+            Node target = queue.pollFirst();
+            for(Node nei: target.neighbors) {
+                if(!visited.containsKey(nei)) {
+                    Node newNei = new Node(nei.val, new ArrayList<>());
+                    visited.put(nei, newNei);
+                    queue.offerFirst(nei);
+                }
+                visited.get(target).neighbors.add(visited.get(nei));
+            }
+        }
+        return visited.get(node);
     }
 }

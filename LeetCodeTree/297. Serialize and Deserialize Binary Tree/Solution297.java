@@ -25,36 +25,13 @@ public class Solution297 {
 		TreeNode newRoot = test.deserialize1(s);
 		System.out.print(newRoot.val);
 	}
-	// Encodes a tree to a single string.
-    public String serialize(TreeNode root) {
-        if(root == null) return "";
-        StringBuilder sb = new StringBuilder();
-        serializePostOrder(root, sb);
-        sb.deleteCharAt(sb.length() -1);
-        StringBuilder sb1 = new StringBuilder();
-        serializeInOrder(root, sb1);
-        sb1.deleteCharAt(sb1.length() -1);
-        return sb.toString() + ";" + sb1.toString();
-    }
+	Map<Integer,Integer> inorderIndex = new HashMap<>();
     
-    private void serializePostOrder(TreeNode root, StringBuilder sb) {
-        if (root == null) return;
-        sb.append(root.val+",");
-        serializePostOrder(root.left, sb);
-        serializePostOrder(root.right, sb);
-    }
+    int[] preOrder;
     
-    private void serializeInOrder(TreeNode root, StringBuilder sb) {
-        if (root == null) return;
-        serializeInOrder(root.left, sb);
-        sb.append(root.val+",");
-        serializeInOrder(root.right, sb);
-    }
-
     // Decodes your encoded data to tree.
     int preOrderIndex = 0;
-    int[] preOrder;
-    Map<Integer,Integer> inorderIndex = new HashMap<>();
+
     public TreeNode deserialize(String data) {
         if(data == null || data.length() == 0) return null;
         String[] orders = data.split(";");
@@ -67,21 +44,23 @@ public class Solution297 {
         }
         return generateTreePreOrder(0,this.preOrder.length);
     }
-    
-    private TreeNode generateTreePreOrder(int inLeft, int inRight) {
-        if (inLeft == inRight) return null;
-        int rootVal = preOrder[preOrderIndex++];
-        TreeNode root = new TreeNode(rootVal);
-        int mid = inorderIndex.get(rootVal);
-        root.left = generateTreePreOrder(inLeft, mid);
-        root.right = generateTreePreOrder(mid + 1, inRight);
-        return root;
+    public TreeNode deserialize1(String data) {
+         String[] s = data.split(",");
+         List<String> data_list = new LinkedList<String>(Arrays.asList(s));
+         return deserialize1(data_list);
+     }
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        if(root == null) return "";
+        StringBuilder sb = new StringBuilder();
+        serializePostOrder(root, sb);
+        sb.deleteCharAt(sb.length() -1);
+        StringBuilder sb1 = new StringBuilder();
+        serializeInOrder(root, sb1);
+        sb1.deleteCharAt(sb1.length() -1);
+        return sb.toString() + ";" + sb1.toString();
     }
-    
-    
-    
-    
-	 // Encodes a tree to a single string.
+    // Encodes a tree to a single string.
     // Encodes a tree to a single string.
      public String serialize1(TreeNode root) {
          StringBuilder sb = new StringBuilder();
@@ -89,26 +68,8 @@ public class Solution297 {
          sb.deleteCharAt(sb.length() -1);
          return sb.toString();
      }
-     
-     private void serializePostOrder1(TreeNode root, StringBuilder sb) {
-         if (root == null) {
-             sb.append("null,");
-         } else {
-             sb.append(root.val+",");
-             serializePostOrder(root.left, sb);
-             serializePostOrder(root.right, sb);
-         }
-     }
-     
-     
-     
-     public TreeNode deserialize1(String data) {
-         String[] s = data.split(",");
-         List<String> data_list = new LinkedList<String>(Arrays.asList(s));
-         return deserialize1(data_list);
-     }
-     
-     private TreeNode deserialize1(List<String> data_list) {
+    
+    private TreeNode deserialize1(List<String> data_list) {
          if(data_list.get(0).equals("null")) {
              data_list.remove(0);
              return null;
@@ -118,5 +79,44 @@ public class Solution297 {
          root.left = deserialize1(data_list);
          root.right = deserialize1(data_list);
          return root;
+     }
+    
+    
+    
+    
+	 private TreeNode generateTreePreOrder(int inLeft, int inRight) {
+        if (inLeft == inRight) return null;
+        int rootVal = preOrder[preOrderIndex++];
+        TreeNode root = new TreeNode(rootVal);
+        int mid = inorderIndex.get(rootVal);
+        root.left = generateTreePreOrder(inLeft, mid);
+        root.right = generateTreePreOrder(mid + 1, inRight);
+        return root;
+    }
+     
+     private void serializeInOrder(TreeNode root, StringBuilder sb) {
+        if (root == null) return;
+        serializeInOrder(root.left, sb);
+        sb.append(root.val+",");
+        serializeInOrder(root.right, sb);
+    }
+     
+     
+     
+     private void serializePostOrder(TreeNode root, StringBuilder sb) {
+        if (root == null) return;
+        sb.append(root.val+",");
+        serializePostOrder(root.left, sb);
+        serializePostOrder(root.right, sb);
+    }
+     
+     private void serializePostOrder1(TreeNode root, StringBuilder sb) {
+         if (root == null) {
+             sb.append("null,");
+         } else {
+             sb.append(root.val+",");
+             serializePostOrder(root.left, sb);
+             serializePostOrder(root.right, sb);
+         }
      }
 }

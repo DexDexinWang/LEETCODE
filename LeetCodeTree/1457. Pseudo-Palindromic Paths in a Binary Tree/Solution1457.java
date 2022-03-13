@@ -5,6 +5,19 @@ import generator.TreeNode;
 
 public class Solution1457 {
     int total = 0;
+    public boolean checkPalindromic(Map<Integer, Integer> map) {
+        boolean hasUnit = false;
+        for(Map.Entry<Integer,Integer> entry: map.entrySet()) {
+            if(entry.getValue() % 2 == 1) {
+                if (hasUnit) {
+                    return false;
+                }
+                hasUnit = true;
+            }
+        }
+        return true;
+    }
+    
     public int pseudoPalindromicPaths (TreeNode root) {
         if (root == null) return 0;
         Map<Integer, Integer> map = new HashMap<>();
@@ -22,18 +35,5 @@ public class Solution1457 {
             pseudoPalindromicPaths(root.right, map);
         }
         map.put(root.val, map.get(root.val) - 1);
-    }
-    
-    public boolean checkPalindromic(Map<Integer, Integer> map) {
-        boolean hasUnit = false;
-        for(Map.Entry<Integer,Integer> entry: map.entrySet()) {
-            if(entry.getValue() % 2 == 1) {
-                if (hasUnit) {
-                    return false;
-                }
-                hasUnit = true;
-            }
-        }
-        return true;
     }
 }

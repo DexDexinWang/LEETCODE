@@ -29,7 +29,16 @@ import generator.TreeRandom;
 
 public class Solution235 {
 
-	public static void main(String[] args) 
+	public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) 
+    {
+    	while((root.val-p.val)*(root.val-q.val)>0)
+    	{
+    		root = p.val < root.val ? root.left : root.right;
+    	}
+    	return root;
+    }
+	
+    public static void main(String[] args) 
 	{
 		TreeNode input1 = TreeRandom.treeGen(4, null);
 		TreeNode input2 = TreeRandom.treeGen(1, null);
@@ -43,14 +52,5 @@ public class Solution235 {
 		lowestCommonAncestor(input1,input2,input3).print();
 		System.out.println();
 	}
-	
-    public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) 
-    {
-    	while((root.val-p.val)*(root.val-q.val)>0)
-    	{
-    		root = p.val < root.val ? root.left : root.right;
-    	}
-    	return root;
-    }
 
 }

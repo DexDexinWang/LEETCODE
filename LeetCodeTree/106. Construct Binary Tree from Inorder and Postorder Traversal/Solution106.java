@@ -7,30 +7,42 @@ public class Solution106 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Solution106 s = new Solution106();
+		s.buildTree(new int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
 	}
-    int[] inorder;
-    int[] postorder;
-    int postOrderIndex;
-    Map<Integer, Integer> map = new HashMap<>();
+	
+	/*
+	 * 9 3 15 20 7
+	 * 9 15 7 20 3
+	 * 
+	 * 
+	 * 							3
+	 * 					|				|
+	 * 				sub{9}     			sub - inorder{15 20 7}  postorder {15 7 20}   -> 20   
+	 * 
+	 * 								|		|
+	 * 								15		7								
+	 * 
+	 * */
+    int globalIndex;
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        this.inorder = inorder;
-        this.postorder = postorder;
-        postOrderIndex = postorder.length - 1;
-        for(int i = 0; i < inorder.length; i++) {
-            map.put(inorder[i],i);
+        Map<Integer,Integer> map = new HashMap<>();
+        int len = inorder.length;
+        globalIndex = len - 1;
+        for(int i = 0; i < len; i++) {
+            map.put(inorder[i], i);
         }
-        return buildTree(0, inorder.length);
+        return findNode(postorder, 0, len - 1, map);
     }
     
-    private TreeNode buildTree(int inLeft, int inRight) {
-        if(inLeft == inRight) return null;
-        int rootVal = postorder[postOrderIndex];
-        TreeNode root = new TreeNode(rootVal);
-        postOrderIndex--;
-        int index = map.get(rootVal);
-        root.right = buildTree(index+1, inRight);
-        root.left = buildTree(inLeft, index);
+    private TreeNode findNode(int[] postorder, int left, int right, Map<Integer, Integer> map) {
+        if (left > right) return null;
+        int target = postorder[globalIndex--];
+        TreeNode root = new TreeNode(target);
+        if(left == right) return root;
+        int index = map.get(target);
+        root.right = findNode(postorder, index + 1, right, map);
+        root.left = findNode(postorder, left, index - 1, map);
         return root;
     }
 }

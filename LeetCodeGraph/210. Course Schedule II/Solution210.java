@@ -9,7 +9,8 @@ public class Solution210 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Solution210 s = new Solution210();
+		s.findOrder2(2, new int[][]{{1,0},{0,1}});
 	}
     //Best First Search - Topological Ordering: How many in/out for each node.
     //Choose 0 in-degree node to do expend
@@ -59,5 +60,40 @@ public class Solution210 {
         }
 		return res;
         
+    }
+    
+    public int[] findOrder2(int numCourses, int[][] prerequisites) {
+        Map<Integer, Set<Integer>> graph = new HashMap<>();
+        int[] inCounter = new int[numCourses];
+        for(int[] pre : prerequisites) {
+            int end = pre[0];
+            int begin = pre[1];
+            inCounter[end]++;
+            graph.putIfAbsent(begin, new HashSet<>());
+            graph.get(begin).add(end);
+        }
+        
+        Deque<Integer> queue = new LinkedList<>();
+        for(int i = 0; i < numCourses; i++) {
+            if (inCounter[i] == 0) {
+                queue.offerLast(i);
+            }
+        }
+        
+        int[] res = new int[numCourses];
+        int index = 0;
+        while(!queue.isEmpty()) {
+            int curr = queue.pollFirst();
+            res[index++] = curr;
+            if(graph.containsKey(curr)) {
+                for(Integer next : graph.get(curr)) {
+                    inCounter[next]--;
+                    if(inCounter[next] == 0) {
+                        queue.offerLast(next);
+                    }
+                }
+            }
+        }
+        return res.length != numCourses ? new int[]{} : res;
     }
 }

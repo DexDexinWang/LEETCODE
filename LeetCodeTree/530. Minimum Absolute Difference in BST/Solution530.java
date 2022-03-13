@@ -32,21 +32,21 @@ import generator.TreeRandom;
 
 public class Solution530 {
 
-	public static void main(String[] args) 
+	static int minDiff = Integer.MAX_VALUE;
+	
+	static TreeNode prev;
+	public static int getMinimumDifference(TreeNode root) 
+    {
+    	inorder(root);
+    	return minDiff;
+    }
+	
+    public static void main(String[] args) 
 	{
 		TreeNode input = TreeRandom.treeGen(3, null);
 		input.print();
 		System.out.println("\n"+getMinimumDifference(input));
 	}
-	
-	static int minDiff = Integer.MAX_VALUE;
-	static TreeNode prev;
-	
-    public static int getMinimumDifference(TreeNode root) 
-    {
-    	inorder(root);
-    	return minDiff;
-    }
     
     private static void inorder(TreeNode root)
     {

@@ -26,16 +26,8 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution583 {
-	public static void main(String[] args) 
-	{
-		TreeNode input = TreeRandom.treeGen(3, null);
-		input.print();
-		TreeNode output = convertBST(input);
-		System.out.println();
-		output.print();
-	}
 	private static int sum =0;
-    public static TreeNode convertBST(TreeNode root) {
+	public static TreeNode convertBST(TreeNode root) {
         if(root==null) return null;
         convertBST(root.right);
         root.val+=sum;
@@ -43,4 +35,12 @@ public class Solution583 {
         convertBST(root.left);
         return root;
     }
+    public static void main(String[] args) 
+	{
+		TreeNode input = TreeRandom.treeGen(3, null);
+		input.print();
+		TreeNode output = convertBST(input);
+		System.out.println();
+		output.print();
+	}
 }

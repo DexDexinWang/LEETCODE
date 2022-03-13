@@ -8,7 +8,7 @@
 package generator;
 
 public class RandomListNode {
-	 public int label;
+	 public int val;
 	 public RandomListNode next, random;
-	 public RandomListNode(int x) { this.label = x; }
+	 public RandomListNode(int x) { this.val = x; }
 }

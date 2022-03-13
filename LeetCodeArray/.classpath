@@ -105,5 +105,10 @@
 	<classpathentry kind="src" path="215. Kth Largest Element in an Array"/>
 	<classpathentry kind="src" path="986. Interval List Intersections"/>
 	<classpathentry kind="src" path="621. Task Scheduler"/>
+	<classpathentry kind="src" path="1460. Make Two Arrays Equal by Reversing Sub-arrays"/>
+	<classpathentry kind="src" path="150. Evaluate Reverse Polish Notation"/>
+	<classpathentry kind="src" path="151. Reverse Words in a String"/>
+	<classpathentry kind="src" path="721. Accounts Merge"/>
+	<classpathentry kind="src" path="6015. Count Array Pairs Divisible by K"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
