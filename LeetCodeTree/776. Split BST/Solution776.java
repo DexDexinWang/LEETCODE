@@ -69,6 +69,20 @@ public class Solution776 {
         return res;
     }
     
+    private TreeNode[] findBiggerSuccessor(TreeNode root) {
+        if(root.right == null) return new TreeNode[]{null,null};
+        if(root.right.left == null) return new TreeNode[]{null,root.right};
+        TreeNode prev = root.right;
+        root = root.right.left;
+        
+        while(root.left != null) {
+            root= root.left;
+            prev = root;
+        }
+        prev.left = null;
+        return new TreeNode[]{prev,root};
+    } 
+    
     private TreeNode[] findMostClost(TreeNode root, int v) {
         TreeNode targetPrevious = null;
         TreeNode previous = null;
@@ -82,19 +96,5 @@ public class Solution776 {
             previous = target;
         }
         return new TreeNode[]{targetPrevious, target};
-    } 
-    
-    private TreeNode[] findBiggerSuccessor(TreeNode root) {
-        if(root.right == null) return new TreeNode[]{null,null};
-        if(root.right.left == null) return new TreeNode[]{null,root.right};
-        TreeNode prev = root.right;
-        root = root.right.left;
-        
-        while(root.left != null) {
-            root= root.left;
-            prev = root;
-        }
-        prev.left = null;
-        return new TreeNode[]{prev,root};
     }
 }

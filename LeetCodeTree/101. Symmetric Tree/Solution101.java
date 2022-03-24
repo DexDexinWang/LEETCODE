@@ -29,16 +29,16 @@ import generator.TreeRandom;
 
 public class Solution101 {
 
-	public static void main(String[] args) {
-		TreeNode input1 = TreeRandom.treeGen(5, null);
-		System.out.println(isSymmetric(input1));
-	}
-	
-    public static boolean isSymmetric(TreeNode root) 
+	public static boolean isSymmetric(TreeNode root) 
     {
     	if(root==null) return true;
     	return isMirror(root.left,root.right);
     }
+	
+    public static void main(String[] args) {
+		TreeNode input1 = TreeRandom.treeGen(5, null);
+		System.out.println(isSymmetric(input1));
+	}
     
     private static boolean isMirror(TreeNode left, TreeNode right)
     {

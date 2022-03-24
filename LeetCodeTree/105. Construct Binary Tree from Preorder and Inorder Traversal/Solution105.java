@@ -11,18 +11,9 @@ public class Solution105 {
 	}
 	
     private int preOrderIndex = 0;
-    int[] preorder;
-    int[] inorder;
     HashMap<Integer,Integer> index_map = new HashMap<>();
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        this.preorder = preorder;
-        this.inorder = inorder;
-        for(int i = 0; i < inorder.length; i++) {
-            index_map.put(inorder[i], i);
-        }
-        return buildTree(0, inorder.length);
-    }
-    
+    int[] inorder;
+    int[] preorder;
     public TreeNode buildTree(int inLeft, int inRight) {
         if(inLeft == inRight) {
             return null;
@@ -34,6 +25,15 @@ public class Solution105 {
         root.left = buildTree(inLeft, index);
         root.right = buildTree(index + 1, inRight);
         return root;
+    }
+    
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        this.preorder = preorder;
+        this.inorder = inorder;
+        for(int i = 0; i < inorder.length; i++) {
+            index_map.put(inorder[i], i);
+        }
+        return buildTree(0, inorder.length);
     }
     
 }

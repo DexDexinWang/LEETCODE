@@ -25,6 +25,19 @@ public class Solution545 {
         return leftList;
     }
     
+    private void boundaryOfBinaryTreePreOrder(TreeNode root, List<Integer> leftList, List<Integer> rightList, List<Integer> leaveList, int flag){
+        if(root == null) return;
+        if(isRightBoundary(flag)) {
+            rightList.add(0, root.val);
+        } else if (isLeftBoundary(flag) || isRoot(flag)) {
+            leftList.add(root.val);
+        } else if (root.left == null && root.right == null) {
+            leaveList.add(root.val);
+        }
+        boundaryOfBinaryTreePreOrder(root.left, leftList, rightList, leaveList, leftChildFlag(root, flag));
+        boundaryOfBinaryTreePreOrder(root.right, leftList, rightList, leaveList, rightChildFlag(root, flag));
+    }
+    
     private boolean isLeftBoundary(int flag) {
         return flag == 1;
     }
@@ -55,19 +68,6 @@ public class Solution545 {
         } else {
             return 3;
         }
-    }
-    
-    private void boundaryOfBinaryTreePreOrder(TreeNode root, List<Integer> leftList, List<Integer> rightList, List<Integer> leaveList, int flag){
-        if(root == null) return;
-        if(isRightBoundary(flag)) {
-            rightList.add(0, root.val);
-        } else if (isLeftBoundary(flag) || isRoot(flag)) {
-            leftList.add(root.val);
-        } else if (root.left == null && root.right == null) {
-            leaveList.add(root.val);
-        }
-        boundaryOfBinaryTreePreOrder(root.left, leftList, rightList, leaveList, leftChildFlag(root, flag));
-        boundaryOfBinaryTreePreOrder(root.right, leftList, rightList, leaveList, rightChildFlag(root, flag));
     }
 
 }

@@ -7,44 +7,15 @@ public class Solution1123 {
 
 	}
 	
+    int currentMax =-1;
     //DFS pass height to child nodes and compare height;
     //left and right: expecting return the lowest height.
     //current: if left == right and >= global lowest height, update common node.
     //return: return lowest height.
     TreeNode lowest = null;
     int lowestHeight = 0;
-    public TreeNode lcaDeepestLeaves(TreeNode root) {
-        if (root == null) return null;
-        lcaDeepestLeavesPreOrder(root, 0);
-        return lowest;
-    }
-    
-    private int lcaDeepestLeavesPreOrder(TreeNode root, int height) {
-        if (root.left == null && root.right == null) {
-            if (height > lowestHeight) {
-                lowestHeight = height;
-                lowest = root;
-            }
-            return height;
-        } else {
-            int left = root.left != null ? lcaDeepestLeavesPreOrder(root.left, height + 1) : height;
-            int right = root.right != null ? lcaDeepestLeavesPreOrder(root.right, height + 1) : height;
-            if (left == right && left >= lowestHeight) {
-                lowestHeight = left;
-                lowest = root;
-            } 
-            return Math.max(left, right);
-            
-        }
-        
-    }
     
     TreeNode maxNode = null;
-    int currentMax =-1;
-    public TreeNode lcaDeepestLeaves1(TreeNode root) {
-        getDeepestLeaves(root,0);
-        return maxNode;
-    }
     
     public int getDeepestLeaves(TreeNode root,int depth)
     {
@@ -72,6 +43,35 @@ public class Solution1123 {
             }
         }
         return Math.max(left,right);
+    }
+    public TreeNode lcaDeepestLeaves(TreeNode root) {
+        if (root == null) return null;
+        lcaDeepestLeavesPreOrder(root, 0);
+        return lowest;
+    }
+    public TreeNode lcaDeepestLeaves1(TreeNode root) {
+        getDeepestLeaves(root,0);
+        return maxNode;
+    }
+    
+    private int lcaDeepestLeavesPreOrder(TreeNode root, int height) {
+        if (root.left == null && root.right == null) {
+            if (height > lowestHeight) {
+                lowestHeight = height;
+                lowest = root;
+            }
+            return height;
+        } else {
+            int left = root.left != null ? lcaDeepestLeavesPreOrder(root.left, height + 1) : height;
+            int right = root.right != null ? lcaDeepestLeavesPreOrder(root.right, height + 1) : height;
+            if (left == right && left >= lowestHeight) {
+                lowestHeight = left;
+                lowest = root;
+            } 
+            return Math.max(left, right);
+            
+        }
+        
     }
 
 }

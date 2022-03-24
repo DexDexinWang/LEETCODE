@@ -5,6 +5,14 @@ import java.util.List;
 
 public class Solution872 {
 	
+	public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+        List<Integer> t1 = new LinkedList<>();
+        List<Integer> t2 = new LinkedList<>();
+        traverseTree(root1, t1);
+        traverseTree(root2, t2);
+        return t1.equals(t2);
+    }
+	
 	public boolean leafSimilar2(TreeNode root1, TreeNode root2) {
 		if (root1 == null && root2 == null) {
 			return true;
@@ -20,14 +28,6 @@ public class Solution872 {
         } else {
         	return t1.equals(t2);
         }
-    }
-	
-	public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-        List<Integer> t1 = new LinkedList<>();
-        List<Integer> t2 = new LinkedList<>();
-        traverseTree(root1, t1);
-        traverseTree(root2, t2);
-        return t1.equals(t2);
     }
     
     public void traverseTree(TreeNode root, List<Integer> record) {

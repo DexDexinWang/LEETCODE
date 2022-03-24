@@ -7,11 +7,6 @@ public class Solution222 {
 
 	}
 	
-    //Recursion
-    public int countNodes1(TreeNode root) {
-    	return root == null? 0 : 1 + countNodes(root.left) + countNodes(root.right);
-    }
-    
     public int countNodes(TreeNode root) {
         if(root == null) return 0;
         int depth = countDepth(root);
@@ -26,13 +21,9 @@ public class Solution222 {
         return (int)Math.pow(2,depth) - 1 + left;
     }
     
-    private int countDepth(TreeNode root) {
-        int count = 0;
-        while(root!= null) {
-            root = root.left;
-            count++;
-        }
-        return count;
+    //Recursion
+    public int countNodes1(TreeNode root) {
+    	return root == null? 0 : 1 + countNodes(root.left) + countNodes(root.right);
     }
     
     private boolean checkLeave(TreeNode root, int index, int depth) {
@@ -49,6 +40,15 @@ public class Solution222 {
             }
         }
         return root != null;
+    }
+    
+    private int countDepth(TreeNode root) {
+        int count = 0;
+        while(root!= null) {
+            root = root.left;
+            count++;
+        }
+        return count;
     }
 
 }

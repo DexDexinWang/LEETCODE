@@ -33,14 +33,6 @@ import java.util.Queue;
 
 public class Solution637 {
 
-	public static void main(String[] args) 
-	{
-		TreeNode input = TreeRandom.treeGen(5, null);
-		input.print();
-		List<Double> result = averageOfLevels(input);
-		System.out.println("\n"+Arrays.toString(result.toArray()));
-	}
-	
 	public static List<Double> averageOfLevels(TreeNode root) {
         List<Double> result = new LinkedList<Double>();
         Queue<TreeNode> que = new LinkedList<TreeNode>();
@@ -60,5 +52,13 @@ public class Solution637 {
         }
         return result;
     }
+	
+	public static void main(String[] args) 
+	{
+		TreeNode input = TreeRandom.treeGen(5, null);
+		input.print();
+		List<Double> result = averageOfLevels(input);
+		System.out.println("\n"+Arrays.toString(result.toArray()));
+	}
 
 }

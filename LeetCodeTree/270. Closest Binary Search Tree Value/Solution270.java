@@ -16,13 +16,7 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution270 {
-	public static void main(String[] args) 
-	{
-		TreeNode input = TreeRandom.treeGenLeftRange(3, null, 0, 10);
-		input.print();
-		System.out.println("\n"+closestValue(input,5));
-	}
-    public static int closestValue(TreeNode root, double target) {
+	public static int closestValue(TreeNode root, double target) {
         int closest = root.val;
         while(root!= null) {
             closest = Math.abs(root.val - target) < Math.abs(closest - target) ? root.val: closest;
@@ -30,6 +24,12 @@ public class Solution270 {
         }
         return closest;
     }
+    public static void main(String[] args) 
+	{
+		TreeNode input = TreeRandom.treeGenLeftRange(3, null, 0, 10);
+		input.print();
+		System.out.println("\n"+closestValue(input,5));
+	}
     
    //Iteration find a path. If root.val == target, return root value. 
     //If root.value > target, min larger value is root, and go left;

@@ -12,11 +12,11 @@ public class Solution971 {
 		root.right = new TreeNode(3);
 		new Solution971().flipMatchVoyage(root, new int[] {1,3,2});
 	}
-	//Pre-order
+	int index;
+    //Pre-order
     //current: if null return;  if root.val != voyage[i] the whole tree is invalid. if root.left != null && root.left.val != voyage[i+1] then add value; and pre-order right - left. otherwise pre-order left - right.
     boolean isValid;
     List<Integer> res;
-    int index;
     public List<Integer> flipMatchVoyage(TreeNode root, int[] voyage) {
         isValid = true;
         res = new LinkedList<>();

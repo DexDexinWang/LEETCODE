@@ -12,16 +12,8 @@ import generator.TreeNode;
 
 public class TreeRandom 
 {
-	private static final int MIN=0;
 	private static final int MAX=100000;
-	
-	/**
-	 * To return a random integer with minimum value and maximum value
-	 */
-	public static int range(int min,int max)
-	{
-		return ThreadLocalRandom.current().nextInt(min, max + 1);
-	}
+	private static final int MIN=0;
 	
 	/**
 	 * To return a random integer with final minimum value and final maximum value
@@ -29,6 +21,14 @@ public class TreeRandom
 	public static int range()
 	{
 		return ThreadLocalRandom.current().nextInt(MIN, MAX);
+	}
+	
+	/**
+	 * To return a random integer with minimum value and maximum value
+	 */
+	public static int range(int min,int max)
+	{
+		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	
 	/**
@@ -50,14 +50,13 @@ public class TreeRandom
 	/**
 	 * To return a random binary tree with given minimum value and maximum value
 	 */
-	public static TreeNode treeGenRange(int len, TreeNode root, int min, int max)
+	public static TreeNode treeGenLeftRange(int len, TreeNode root, int min, int max)
 	{
 		root = new TreeNode(range(min,max));
 		
 		if(len>1)
 		{
-			root.left = treeGenRange( len-1 , root,min,max);
-			root.right = treeGenRange( len-1 ,  root,min,max);
+			root.left = treeGenLeftRange( len-1 , root,min,max);
 		}
 		
 		return root;
@@ -66,13 +65,14 @@ public class TreeRandom
 	/**
 	 * To return a random binary tree with given minimum value and maximum value
 	 */
-	public static TreeNode treeGenLeftRange(int len, TreeNode root, int min, int max)
+	public static TreeNode treeGenRange(int len, TreeNode root, int min, int max)
 	{
 		root = new TreeNode(range(min,max));
 		
 		if(len>1)
 		{
-			root.left = treeGenLeftRange( len-1 , root,min,max);
+			root.left = treeGenRange( len-1 , root,min,max);
+			root.right = treeGenRange( len-1 ,  root,min,max);
 		}
 		
 		return root;

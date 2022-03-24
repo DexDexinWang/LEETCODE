@@ -37,17 +37,17 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution513 {
-	public static void main(String[] args) 
+	public static int findBottomLeftValue(TreeNode root) 
+    {
+    	return findBottomLeftValue(root, 1, new int[]{0,0});
+    }
+
+    public static void main(String[] args) 
 	{
 		TreeNode input = TreeRandom.treeGen(3, null);
 		input.print();
 		System.out.println(findBottomLeftValue(input));
 	}
-
-    public static int findBottomLeftValue(TreeNode root) 
-    {
-    	return findBottomLeftValue(root, 1, new int[]{0,0});
-    }
     
     private static int findBottomLeftValue(TreeNode root, int depth, int[] res)
     {

@@ -42,17 +42,7 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution606 {
-	public static void main(String[] args) {
-		TreeNode input1 = TreeRandom.treeGen(3, null);
-		System.out.println(tree2str(input1));
-	}
-	
-    public static String tree2str(TreeNode t) {
-        StringBuilder sb = new StringBuilder();
-        helper(sb,t);
-        return sb.toString();
-    }
-    public static void helper(StringBuilder sb,TreeNode t){
+	public static void helper(StringBuilder sb,TreeNode t){
         if(t!=null)
         {
             sb.append(t.val);
@@ -70,6 +60,16 @@ public class Solution606 {
                 }
             }
         }
+    }
+	
+    public static void main(String[] args) {
+		TreeNode input1 = TreeRandom.treeGen(3, null);
+		System.out.println(tree2str(input1));
+	}
+    public static String tree2str(TreeNode t) {
+        StringBuilder sb = new StringBuilder();
+        helper(sb,t);
+        return sb.toString();
     }
     
   //Situations:

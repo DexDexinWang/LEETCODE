@@ -5,10 +5,6 @@ import generator.TreeNode;
 
 public class Solution173 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 	/**
 	 * Definition for a binary tree node.
 	 * public class TreeNode {
@@ -31,6 +27,11 @@ public class Solution173 {
 	        this.root = root;
 	    }
 	    
+	    /** @return whether we have a next smallest number */
+	    public boolean hasNext() {
+	        return root != null || !stack.isEmpty();
+	    }
+	    
 	    /** @return the next smallest number */
 	    public int next() {
 	        if (root != null || !stack.isEmpty()) {
@@ -49,11 +50,10 @@ public class Solution173 {
 	            return -1;
 	        }
 	    }
-	    
-	    /** @return whether we have a next smallest number */
-	    public boolean hasNext() {
-	        return root != null || !stack.isEmpty();
-	    }
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
 	}
 
 	/**

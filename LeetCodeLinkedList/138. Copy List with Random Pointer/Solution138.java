@@ -15,12 +15,31 @@ Return a deep copy of the list.
 
 import generator.RandomListNode;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Solution138 {
 	
 	public static void main(String[] args) {
 		System.out.println();
-		RandomListNode output = copyRandomList(null);
+		RandomListNode node0 = new RandomListNode(7);
+		RandomListNode node1 = new RandomListNode(13);
+		node0.next = node1;
+		
+		RandomListNode node2 = new RandomListNode(11);
+		node1.next = node2;
+		
+		RandomListNode node3 = new RandomListNode(10);
+		node2.next = node3;	
+	
+		RandomListNode node4 = new RandomListNode(1);
+		node3.next = node4;
+		
+		node1.random = node0;
+		node2.random = node4;
+		node3.random = node2;
+		node4.random = node0;
+
+		RandomListNode output = copyRandomList1(node0);
 		System.out.println(output);
 	}
 	
@@ -54,7 +73,7 @@ public class Solution138 {
     	while (iter != null) {
     		next = iter.next;
 
-    		RandomListNode copy = new RandomListNode(iter.label);
+    		RandomListNode copy = new RandomListNode(iter.val);
     		iter.next = copy;
     		copy.next = next;
 
@@ -91,5 +110,29 @@ public class Solution138 {
 
     	return pseudoHead.next;
     }
+    
+    public static RandomListNode copyRandomList1(RandomListNode head) {
+        Map<RandomListNode,RandomListNode> map = new HashMap<>();
+        RandomListNode header = head;
+        while(head!= null) {
+        	RandomListNode newHead = findNode(map, head);
+            newHead.next = findNode(map, head.next);
+            newHead.random = findNode(map, head.random);
+            head = head.next;
+        }
+        return map.get(header);
+    }
+    
+    private static RandomListNode findNode(Map<RandomListNode,RandomListNode> map, RandomListNode target) {
+        if(target == null) return null;
+        if(map.containsKey(target)) {
+            return map.get(target);
+        } else {
+        	RandomListNode newTarget = new RandomListNode(target.val);
+            map.put(target, newTarget);
+            return newTarget;
+        }
+    }
+    
 
 }

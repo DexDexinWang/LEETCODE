@@ -28,16 +28,7 @@ import generator.TreeNode;
 
 public class Solution226 {
 
-	public static void main(String[] args) 
-	{
-		TreeNode input = TreeRandom.treeGen(3, null);
-		input.print();
-		System.out.println();
-		TreeNode output = invertTree(input);
-		output.print();
-	}
-	
-    public static TreeNode invertTree(TreeNode root) 
+	public static TreeNode invertTree(TreeNode root) 
     {
     	if (root == null)
     	{
@@ -50,5 +41,14 @@ public class Solution226 {
     	
     	return root;
     }
+	
+    public static void main(String[] args) 
+	{
+		TreeNode input = TreeRandom.treeGen(3, null);
+		input.print();
+		System.out.println();
+		TreeNode output = invertTree(input);
+		output.print();
+	}
 
 }

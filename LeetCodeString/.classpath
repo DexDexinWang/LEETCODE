@@ -52,6 +52,9 @@
 	<classpathentry kind="src" path="301. Remove Invalid Parentheses"/>
 	<classpathentry kind="src" path="91. Decode Ways"/>
 	<classpathentry kind="src" path="161.One Edit Distance"/>
+	<classpathentry kind="src" path="1647. Minimum Deletions to Make Character Frequencies Unique"/>
+	<classpathentry kind="src" path="917. Reverse Only Letters"/>
+	<classpathentry kind="src" path="6014. Construct String With Repeat Limit"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="434. Number of Segments in a String"/>
 	<classpathentry kind="output" path="bin"/>

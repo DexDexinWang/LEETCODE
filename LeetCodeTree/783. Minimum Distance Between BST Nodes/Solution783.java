@@ -6,8 +6,8 @@ public class Solution783 {
 		// TODO Auto-generated method stub
 
 	}
-    TreeNode pre = null;
     int globalMin = Integer.MAX_VALUE;
+    TreeNode pre = null;
     public int minDiffInBST(TreeNode root) {
         if(root == null) {
             return 0;

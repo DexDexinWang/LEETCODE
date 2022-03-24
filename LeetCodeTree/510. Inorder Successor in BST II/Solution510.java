@@ -2,10 +2,10 @@
 
 public class Solution510 {
 	class Node {
-	    public int val;
 	    public Node left;
-	    public Node right;
 	    public Node parent;
+	    public Node right;
+	    public int val;
 	};
 	
 	public static void main(String[] args) {

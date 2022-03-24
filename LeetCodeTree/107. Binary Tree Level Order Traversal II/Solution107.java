@@ -33,19 +33,19 @@ import generator.TreeNode;
 import generator.TreeRandom;
 
 public class Solution107 {
-	public static void main(String[] args) 
-	{
-		TreeNode input = TreeRandom.treeGen(3, null);
-		input.print();
-		System.out.println();
-	}
-	
-    public static List<List<Integer>> levelOrderBottom(TreeNode root) 
+	public static List<List<Integer>> levelOrderBottom(TreeNode root) 
     {
     	LinkedList<List<Integer>> result = new LinkedList<List<Integer>>();
     	addLevel(result, 0, root);
     	return result;
     }
+	
+    public static void main(String[] args) 
+	{
+		TreeNode input = TreeRandom.treeGen(3, null);
+		input.print();
+		System.out.println();
+	}
     
     private static void addLevel( LinkedList<List<Integer>> result, int level,TreeNode root)
     {

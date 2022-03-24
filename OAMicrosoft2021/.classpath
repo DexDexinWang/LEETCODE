@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-16">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="1647. Minimum Deletions to Make Character Frequencies Unique"/>
+	<classpathentry kind="src" path="Min Adj Swaps to Make Palindrome"/>
+	<classpathentry kind="src" path="Min Steps to Make Piles Equal Height"/>
+	<classpathentry kind="src" path="Largest K such that both K and negative K exist in array"/>
+	<classpathentry kind="src" path="1239. Maximum Length of a Concatenated String with Unique Characters"/>
+	<classpathentry kind="src" path="1304. Find N Unique Integers Sum up to Zero"/>
+	<classpathentry kind="src" path="Partition array into N subsets with balanced sum"/>
+	<classpathentry kind="src" path="Jump Game"/>
+	<classpathentry kind="src" path="1448. Count Good Nodes in Binary Tree"/>
+	<classpathentry kind="src" path="698. Partition to K Equal Sum Subsets"/>
+	<classpathentry kind="src" path="minNumber"/>
+	<classpathentry kind="src" path="IsPair"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

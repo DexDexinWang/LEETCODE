@@ -7,17 +7,9 @@ import generator.TreeNode;
 
 public class Solution987 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-	//1. BFS checks each node and calculate row index and col index and node.val
-    //2. Sort by column, row, and value
-    //3. Output
-    
-    class Res{
-        int row;
+	class Res{
         int col;
+        int row;
         int val;
         public Res(int row, int col, int val){
             this.row = row;
@@ -25,6 +17,14 @@ public class Solution987 {
             this.val = val;
         }
     }
+    
+    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	//1. BFS checks each node and calculate row index and col index and node.val
+    //2. Sort by column, row, and value
+    //3. Output
     public List<List<Integer>> verticalTraversal(TreeNode root) {
         List<List<Integer>> res = new LinkedList<>();
         if(root == null) return res;

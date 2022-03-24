@@ -21,6 +21,18 @@ public class Solution863 {
         return res;
     }
     
+    private void PostOrderCheck(TreeNode root, int distinct, int K, List<Integer> res) {
+        if (root == null) return;
+        if (K == distinct) {
+            res.add(root.val);
+        } else if (K < distinct) {
+            return;
+        } else {
+            PostOrderCheck(root.left, distinct + 1, K, res);
+            PostOrderCheck(root.right, distinct + 1, K, res);
+        }
+    }
+    
     private int preOrderCheck(TreeNode root, TreeNode target, int K, List<Integer> res) {
         if (root == null) return -1;
         if (root == target) {
@@ -39,18 +51,6 @@ public class Solution863 {
             return right + 1;
         } else {
             return -1;
-        }
-    }
-    
-    private void PostOrderCheck(TreeNode root, int distinct, int K, List<Integer> res) {
-        if (root == null) return;
-        if (K == distinct) {
-            res.add(root.val);
-        } else if (K < distinct) {
-            return;
-        } else {
-            PostOrderCheck(root.left, distinct + 1, K, res);
-            PostOrderCheck(root.right, distinct + 1, K, res);
         }
     }
 }

@@ -19,18 +19,18 @@ public class Solution865 {
         return dfsGetDeepestNode(root, 0);
     }
     
-    private void dfsUpdateDeepest(TreeNode root, int depth) {
-        if(root == null) return;
-        if(depth > deepest) deepest = depth;
-        dfsUpdateDeepest(root.left, depth + 1);
-        dfsUpdateDeepest(root.right, depth + 1);
-    }
-    
     private TreeNode dfsGetDeepestNode(TreeNode root, int depth) {
         if(root == null || depth == deepest) return root;
         TreeNode left = dfsGetDeepestNode(root.left, depth + 1);
         TreeNode right = dfsGetDeepestNode(root.right, depth + 1);
         if(left != null && right != null) return root;
         return left == null ? right : left;
+    }
+    
+    private void dfsUpdateDeepest(TreeNode root, int depth) {
+        if(root == null) return;
+        if(depth > deepest) deepest = depth;
+        dfsUpdateDeepest(root.left, depth + 1);
+        dfsUpdateDeepest(root.right, depth + 1);
     }
 }

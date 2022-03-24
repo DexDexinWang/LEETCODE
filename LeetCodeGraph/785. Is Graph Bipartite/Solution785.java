@@ -42,4 +42,41 @@ public class Solution785 {
         }
         return true;
     }
+    
+    public boolean isBipartite1(int[][] graph) {
+        int len = graph.length;
+        int[] visited = new int[len];
+        Deque<Integer> queue = new LinkedList<>();
+        for(int i = 0; i < len; i++) {
+            if(visited[i] == 0) {
+                queue.offerLast(i);
+                visited[i] = 1;
+                if(!BfsCheck(queue,visited,graph)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    
+    private boolean BfsCheck(Deque<Integer> queue, int[] visited, int[][] graph) {
+        while(!queue.isEmpty()) {
+            int size = queue.size();
+            for(int i = 0; i < size; i++) {
+                int curr = queue.pollFirst();
+                int currGroup = visited[curr];
+                for(int next: graph[curr]) {
+                    if (visited[next] == 0) {
+                        visited[next] = currGroup == 1 ? 2 : 1;
+                        queue.offerLast(next);
+                    } else {
+                        if (visited[next]== currGroup)  {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+        return true;
+    }
 }
