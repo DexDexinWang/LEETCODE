@@ -46,5 +46,10 @@
 	<classpathentry kind="src" path="5606. Smallest String With A Given Numeric Value"/>
 	<classpathentry kind="src" path="5607. Ways to Make a Fair Array"/>
 	<classpathentry kind="src" path="5608. Minimum Initial Energy to Finish Tasks"/>
+	<classpathentry kind="src" path="5627. Stone Game VII"/>
+	<classpathentry kind="src" path="5629. Reformat Phone Number"/>
+	<classpathentry kind="src" path="5630. Maximum Erasure Value"/>
+	<classpathentry kind="src" path="5631. Jump Game VI"/>
+	<classpathentry kind="src" path="5637. Determine if String Halves Are Alike"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
