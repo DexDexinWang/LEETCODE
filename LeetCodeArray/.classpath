@@ -110,5 +110,6 @@
 	<classpathentry kind="src" path="151. Reverse Words in a String"/>
 	<classpathentry kind="src" path="721. Accounts Merge"/>
 	<classpathentry kind="src" path="6015. Count Array Pairs Divisible by K"/>
+	<classpathentry kind="src" path="Weekly Contest423"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
